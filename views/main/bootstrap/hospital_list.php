@@ -2,13 +2,17 @@
         <header class="header02">
             <div class="inner_center">
                 <h1 class="img_box">
-                    <img src="<?php echo base_url('/assets/images/hospital_list_header_01.jpg')?>" alt="리니어펌 운영 병원 리스트" class="img img_pc">
-                    <img src="<?php echo base_url('/assets/images/hospital_list_header_mo_01.jpg')?>" alt="리니어펌 운영 병원 리스트" class="img img_mo">
+                    <?php 
+                        if($this->cbconfig->get_device_view_type() === 'mobile')
+                            echo '<img src="'.base_url('/assets/images/hospital_list_header_mo_01.jpg').'" alt="리니어펌 운영 병원 리스트" class="img img_mo">' ;
+                        else 
+                            echo '<img src="'.base_url('/assets/images/hospital_list_header_01.jpg').'" alt="리니어펌 운영 병원 리스트" class="img img_pc">' ;
+                         ?>
                 </h1>
                 <span class="blind">본 페이지는 해당 병원의 권유나 추천이 아닌, 정보 전달의 목적으로 제작되었습니다.</span>
             </div>
         </header>
-        <div class="main">
+        <div class="main" style="margin-top:0px;">
             <div class="quick_link01">
                 <a href="<?php echo base_url();?>"><img src="<?php echo base_url('/assets/images/quick_detail.png')?>" alt="리니어펌 병원찾기" class="img"></a>
             </div>
@@ -39,79 +43,45 @@
                                     
 
                          ?>
-                         <?php 
-                                if($this->member->is_admin()){
-                            ?>
-                            <a href="<?php echo admin_url('page/hospital/write/'.element('hpt_id',$hresult)).'?hgr_id='.element('hgr_id',$result)?>">
-                                <li class="hos_box">
-                                    <div class="hos_cell">
-                                        <div class="hos_name">
-                                            <p><?php echo element('hpt_title',$hresult); ?></p>
-                                            <p><?php echo element('hpt_addr',$hresult); ?></p>
-                                        </div>
-                                        <div class="hos_address">
-                                            <svg class="icon" x="0px" y="0px"
-                                            width="16" height="24" viewBox="0 0 16 24">
-                                                <g>
-                                                    <path d="M8,1C3.9,1,0.6,4.3,0.6,8.4C0.6,12.5,8,23,8,23s7.4-10.5,7.4-14.6C15.4,4.3,12.1,1,8,1z M8,12
-                                                        c-2.2,0-4-1.8-4-4c0-2.2,1.8-4,4-4c2.2,0,4,1.8,4,4C12,10.2,10.2,12,8,12z"/>
-                                                </g>
-                                            </svg>
-                                            <?php echo element('hpt_addr_sub',$hresult); ?>
-                                        </div>
+                            <li class="hos_box" <?php echo $this->member->is_admin() ? 'onclick=\'location.href="'.admin_url('page/hospital/write/'.element('hpt_id',$hresult)).'?hgr_id='.element('hgr_id',$result).'"\';': '';?>>
+                                <div class="hos_cell">
+                                    <div class="hos_name">
+                                        <p><?php echo element('hpt_title',$hresult); ?></p>
+                                        <p><?php echo element('hpt_addr',$hresult); ?></p>
                                     </div>
-                                </li>
-                             </a>
-                            <?php    
-                            } else {   
-                            ?>
-                                <li class="hos_box">
-                                    <div class="hos_cell">
-                                        <div class="hos_name">
-                                            <p><?php echo element('hpt_title',$hresult); ?></p>
-                                            <p><?php echo element('hpt_addr',$hresult); ?></p>
-                                        </div>
-                                        <div class="hos_address">
-                                            <svg class="icon" x="0px" y="0px"
-                                            width="16" height="24" viewBox="0 0 16 24">
-                                                <g>
-                                                    <path d="M8,1C3.9,1,0.6,4.3,0.6,8.4C0.6,12.5,8,23,8,23s7.4-10.5,7.4-14.6C15.4,4.3,12.1,1,8,1z M8,12
-                                                        c-2.2,0-4-1.8-4-4c0-2.2,1.8-4,4-4c2.2,0,4,1.8,4,4C12,10.2,10.2,12,8,12z"/>
-                                                </g>
-                                            </svg>
-                                            <?php echo element('hpt_addr_sub',$hresult); ?>
-                                        </div>
+                                    <div class="hos_address">
+                                        <svg class="icon" x="0px" y="0px"
+                                        width="16" height="24" viewBox="0 0 16 24">
+                                            <g>
+                                                <path d="M8,1C3.9,1,0.6,4.3,0.6,8.4C0.6,12.5,8,23,8,23s7.4-10.5,7.4-14.6C15.4,4.3,12.1,1,8,1z M8,12
+                                                    c-2.2,0-4-1.8-4-4c0-2.2,1.8-4,4-4c2.2,0,4,1.8,4,4C12,10.2,10.2,12,8,12z"/>
+                                            </g>
+                                        </svg>
+                                        <?php echo element('hpt_addr_sub',$hresult); ?>
                                     </div>
-                                </li>
-                            <?php    
-                            }
-                            ?>
+                                </div>
+                            </li>
+                                
                         <?php 
                                 }
                         ?>
-                                <?php 
-                                    if($this->member->is_admin()){
-                                ?>
-                                    <a href="<?php echo admin_url('page/hospital/write?hgr_id='.element('hgr_id',$result))?>" >
-                                    <li class="hos_box" style="text-align: center;" >
-                                            <span class="glyphicon glyphicon-plus-sign mt20" style="font-size:100px;"> </span>
+                                
+                                    
+                                    <li class="hos_box" style="text-align: center;" <?php echo $this->member->is_admin() ? 'onclick=\'location.href="'.admin_url('page/hospital/write?hgr_id='.element('hgr_id',$result)).'"\';': '';?>>
+                                            <span class="glyphicon glyphicon-plus-sign " style="font-size:100px;margin-top:20px;"> </span>
                                         </li>
-                                    </a>
-                                <?php } 
-                                ?>
+                                    
+                                
                         <?php 
                             } else {
                         ?>      
-                            <?php 
-                                if($this->member->is_admin()){
-                            ?>
-                                <a href="<?php echo admin_url('page/hospital/write?hgr_id='.element('hgr_id',$result))?>" >
-                                <li class="hos_box" style="text-align: center;" >
-                                    <span class="glyphicon glyphicon-plus-sign mt20" style="font-size:100px;"> </span>
+                           
+                                
+                                <li class="hos_box" style="text-align: center;" <?php echo $this->member->is_admin() ? 'onclick=\'location.href="'.admin_url('page/hospital/write?hgr_id='.element('hgr_id',$result)).'"\';': '';?>>
+                                    <span class="glyphicon glyphicon-plus-sign " style="font-size:100px;margin-top:20px;"> </span>
                                 </li>
-                                </a>
-                            <?php } 
-                            ?>
+                                
+                           
                         <?php 
                             }
                         ?>

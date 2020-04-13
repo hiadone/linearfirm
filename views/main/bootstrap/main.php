@@ -16,7 +16,7 @@
                         <li class="gnb_item js-gnb-item"><a href="#sectVideo" class="gnb_link js-gnb-link">영상</a></li>
                         <li class="gnb_item js-gnb-item"><a href="#sectCertification" class="gnb_link js-gnb-link">국제인증</a></li>
                         <?php if ($this->member->is_admin() === 'super') { ?>
-                        <li class="gnb_item"><a href="<?php echo site_url('login/logout'); ?>" class="gnb_link ">Log out</a></li>
+                        <li class="gnb_item"><a href="<?php echo base_url('/main/hospital_list'); ?>" class="gnb_link ">병원찾기</a></li>
                         <?php } ?>
                     </ul>
                 </nav>
@@ -24,11 +24,13 @@
             </div>
         </header>
         <!-- main -->
-        <div class="main">
+        <div class="main" style="margin-top:0px;">
             <!-- 심의용x -->
+            <?php if ($this->member->is_admin() === 'super') { ?>
             <div class="quick_link01">
                 <a href="<?php echo base_url('/main/hospital_list');?>" target="_blank"><img src="<?php echo base_url('/assets/images/quick_hospital.png')?>" alt="리니어펌 병원찾기" class="img"></a>
             </div>
+            <?php } ?>
             <!-- 심의용x end -->
 
             <!-- 상단 비디오 -->
