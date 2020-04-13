@@ -15,9 +15,8 @@
                         <li class="gnb_item js-gnb-item"><a href="#sectAdvantage" class="gnb_link js-gnb-link">특장점</a></li>
                         <li class="gnb_item js-gnb-item"><a href="#sectVideo" class="gnb_link js-gnb-link">영상</a></li>
                         <li class="gnb_item js-gnb-item"><a href="#sectCertification" class="gnb_link js-gnb-link">국제인증</a></li>
-
                         <?php if ($this->member->is_admin() === 'super') { ?>
-                        <li class="gnb_item js-gnb-item"><a href="<?php echo site_url('login/logout'); ?>" class="gnb_link js-gnb-link">Log out</a></li>
+                        <li class="gnb_item"><a href="<?php echo site_url('login/logout'); ?>" class="gnb_link ">Log out</a></li>
                         <?php } ?>
                     </ul>
                 </nav>
