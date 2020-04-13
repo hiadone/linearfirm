@@ -35,7 +35,13 @@
             <div class="video_container01">
                 <div class="inner_center">
                     <video class="video" autoplay loop muted playsinline poster="<?php echo base_url('/assets/images/video_thum_top.jpg')?>">
-                        <source src="<?php echo base_url('/assets/video/video_top_pc.mp4')?>" type="video/mp4">
+                        <?php 
+                        if($this->cbconfig->get_device_view_type() === 'mobile')
+                            echo '<source src="'.base_url('/assets/video/video_top_mo.mp4').'" type="video/mp4">' ;
+                        else 
+                            echo '<source src="'.base_url('/assets/video/video_top_pc.mp4').'" type="video/mp4">' ;
+                         ?>
+                        
                         지원하지 않는 브라우저입니다.
                     </video>
                 </div>
@@ -212,7 +218,13 @@
             <div class="video_container02" id="sectVideo">
                 <div class="video_box">
                     <video class="video" controls poster="<?php echo base_url('/assets/images/video_thum_pc.jpg')?>">
-                        <source src="<?php echo base_url('/assets/video/video_mid_pc.mp4')?>" type="video/mp4">
+                        <?php 
+                        if($this->cbconfig->get_device_view_type() === 'mobile')
+                            echo '<source src="'.base_url('/assets/video/video_mid_mo.mp4').'" type="video/mp4">' ;
+                        else 
+                            echo '<source src="'.base_url('/assets/video/video_mid_pc.mp4').'" type="video/mp4">' ;
+                         ?>
+                        
                         지원하지 않는 브라우저입니다.
                     </video>
                     <div class="video_tag txt_right">광고심의필 : 심의 번호 2019ET1450463</div>
