@@ -19,7 +19,7 @@ composer.lock
 application/config/config.php
 application/config/cb_config.php
 application/config/database.php
-
+/*.json
 
 uploads/cache/*
 

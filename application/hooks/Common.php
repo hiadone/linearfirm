@@ -20,6 +20,13 @@ class _Common
 			return;
 		}
 
+		if ($CI->uri->segment(1) === 'admin'  ) {
+			if ($CI->uri->segment(2) !== 'page' ) {
+				// show_404();
+			}
+				
+		}
+
 		if (config_item('use_lock_ip') && $CI->cbconfig->item('site_ip_whitelist')) {
 			$whitelist = $CI->cbconfig->item('site_ip_whitelist');
 			$whitelist = preg_replace("/[\r|\n|\r\n]+/", ',', $whitelist);

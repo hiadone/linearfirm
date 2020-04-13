@@ -52,6 +52,7 @@ var cookie_prefix = "<?php echo config_item('cookie_prefix'); ?>";
 		<ul class="nav">
 			<?php
 			foreach (element('admin_page_menu', $layout) as $__akey => $__aval) {
+				if($__akey !== 'page' && $__akey !== 'stat') continue;
 			?>
 				<li class="nav-first-level nav_menuname_<?php echo $__akey; ?> <?php echo (element('menu_dir1', $layout) === $__akey) ? 'active' : ''; ?>">
 					<a data-toggle="menu_collapse" href="#collapse<?php echo $__akey; ?>" aria-expanded="false" aria-controls="menu_collapse<?php echo $__akey; ?>" onClick="changemenu('<?php echo $__akey; ?>');" class="<?php echo (element('menu_dir1', $layout) === $__akey) ? '' : 'collapsed'; ?>">

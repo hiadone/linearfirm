@@ -1,3 +1,4 @@
+<?php /* ?>
 <div class="col-sm-6">
 	<div class="panel panel-default">
 		<!-- Default panel contents -->
@@ -135,3 +136,4 @@
 		</table>
 	</div>
 </div>
+<?php */ ?>

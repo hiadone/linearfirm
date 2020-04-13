@@ -3295,4 +3295,83 @@ class Postact extends CB_Controller
 
 		echo $xml;
 	}
+
+
+	/**
+	 * 게시물 비밀글 설정 및 해제 하기
+	 */
+	public function post_hospital($hpt_id = 0, $flag = 1)
+	{
+
+		// 이벤트 라이브러리를 로딩합니다
+		$eventname = 'event_postact_post_hospital';
+		$this->load->event($eventname);
+
+		// 이벤트가 존재하면 실행합니다
+		Events::trigger('before', $eventname);
+
+		$result = array();
+		$this->output->set_content_type('application/json');
+
+		
+		$this->load->model('Hospital_model');
+
+		$hpt_id = (int) $hpt_id;
+		if (empty($hpt_id) OR $hpt_id < 1) {
+			$result = array('error' => '잘못된 접근입니다');
+			exit(json_encode($result));
+		}
+
+		$updatedata = array(
+			'hpt_display' => $flag,
+		);
+		$this->Hospital_model->update($hpt_id, $updatedata);
+
+		// 이벤트가 존재하면 실행합니다
+		Events::trigger('after', $eventname);
+
+		$success = '수정 되었습니다';
+		$result = array('success' => $success);
+		exit(json_encode($result));
+
+	}
+
+	/**
+	 * 게시물 비밀글 설정 및 해제 하기
+	 */
+	public function post_hospital_group($hgr_id = 0, $flag = 1)
+	{
+
+		// 이벤트 라이브러리를 로딩합니다
+		$eventname = 'event_postact_post_hospital';
+		$this->load->event($eventname);
+
+		// 이벤트가 존재하면 실행합니다
+		Events::trigger('before', $eventname);
+
+		$result = array();
+		$this->output->set_content_type('application/json');
+
+		
+		$this->load->model('Hospital_group_model');
+
+		$hgr_id = (int) $hgr_id;
+		if (empty($hgr_id) OR $hgr_id < 1) {
+			$result = array('error' => '잘못된 접근입니다');
+			exit(json_encode($result));
+		}
+
+		$updatedata = array(
+			'hgr_display' => $flag,
+		);
+		$this->Hospital_group_model->update($hgr_id, $updatedata);
+
+		// 이벤트가 존재하면 실행합니다
+		Events::trigger('after', $eventname);
+
+		$success = '수정 되었습니다';
+		$result = array('success' => $success);
+		exit(json_encode($result));
+
+	}
 }
