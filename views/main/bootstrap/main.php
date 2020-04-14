@@ -330,7 +330,11 @@
                 scrollSpy();
             });
             $(document).ready(function() {
-                scrollSpy();
+                <?php if(element('section',$view)){?>
+                    var offset = $('#<?php echo element("section",$view);?>').offset();
+                    $('html, body').animate({scrollTop : offset.top-40}, 40);
+                <?php }  ?>
+                
             });
             
             // header 메뉴 클릭시 scroll animation
@@ -390,12 +394,6 @@
         //end
         });
         
-        $(document).ready(function() {
-            <?php if(element('section',$view)){?>
-                var offset = $('#<?php echo element("section",$view);?>').offset();
-                $('html, body').animate({scrollTop : offset.top-40}, 10);
-                
-            <?php } ?>
-        });
+       
 
     </script>
