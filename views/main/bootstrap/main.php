@@ -29,7 +29,7 @@
             <!-- 심의용x -->
             
             <div class="quick_link01">
-                <a href="<?php echo base_url('/main/hospital_list');?>" target="_blank"><img src="<?php echo base_url('/assets/images/quick_hospital.png')?>" alt="리니어펌 병원찾기" class="img"></a>
+                <a href="<?php echo base_url('/main/hospital_list');?>" ><img src="<?php echo base_url('/assets/images/quick_hospital.png')?>" alt="리니어펌 병원찾기" class="img"></a>
             </div>
             
             <!-- 심의용x end -->
