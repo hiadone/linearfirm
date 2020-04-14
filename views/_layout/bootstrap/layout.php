@@ -49,6 +49,16 @@ var cookie_prefix = "<?php echo config_item('cookie_prefix'); ?>";
 <script type="text/javascript" src="<?php echo base_url('assets/js/sideview.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/js.cookie.js'); ?>"></script>
 <?php echo $this->managelayout->display_js(); ?>
+<?php if(element('ga', $view)){ ?>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162904376-1">
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-162904376-1');
+</script>
+<?php } ?>
 </head>
 <body <?php echo isset($view) ? element('body_script', $view) : ''; ?>>
 <div class="wrapper">

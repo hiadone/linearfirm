@@ -37,16 +37,17 @@
             <!-- 상단 비디오 -->
             <div class="video_container01">
                 <div class="inner_center" >
-                    <video class="video" autoplay loop muted playsinline poster="<?php echo base_url('/assets/images/video_thum_top.jpg')?>">
-                        <?php 
-                        if($this->cbconfig->get_device_view_type() === 'mobile')
-                            echo '<source src="'.base_url('/assets/video/video_top_mo.mp4').'" type="video/mp4">' ;
-                        else 
-                            echo '<source src="'.base_url('/assets/video/video_top_pc1.mp4').'" type="video/mp4">' ;
-                         ?>
-                        
+                    <?php if($this->cbconfig->get_device_view_type() === 'mobile'){ ?>
+                    <video class="video" autoplay loop muted playsinline poster="<?php echo base_url('/assets/images/video_thum_top_mo.jpg')?>">
+                        <source src="<?php echo base_url('/assets/video/video_top_mo.mp4') ?>" type="video/mp4">;
                         지원하지 않는 브라우저입니다.
                     </video>
+                    <?php } else { ?>
+                    <video class="video" autoplay loop muted playsinline poster="<?php echo base_url('/assets/images/video_thum_top.jpg')?>">
+                        <source src="<?php echo base_url('/assets/video/video_top_pc1.mp4') ?>" type="video/mp4">;
+                        지원하지 않는 브라우저입니다.
+                    </video>
+                    <?php } ?>
                 </div>
             </div>
             <!-- 리니어펌? -->

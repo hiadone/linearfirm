@@ -130,6 +130,7 @@ class Main extends CB_Controller
 		$view = array();
 		$view['view'] = array();
 
+		$view['view']['ga'] = true;
 		// if ($this->member->is_admin() !== 'super') {
 		// 	redirect('login?url=' . urlencode(current_full_url()));
 		// }
@@ -186,6 +187,7 @@ class Main extends CB_Controller
 		
 
 		$view['view']['data'] = $result;
+
 
 		if(empty($section))
 			$page_title = $this->cbconfig->item('site_meta_title_main');
