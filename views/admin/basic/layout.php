@@ -65,7 +65,7 @@ var cookie_prefix = "<?php echo config_item('cookie_prefix'); ?>";
 						<?php
 						foreach (element('menu', $__aval) as $menukey => $menuvalue) {
 							if(strpos(base_url(),'dev.linearfirm.co.kr') === false)
-								if(element(1, $menuvalue) !== 'hospitalgroup' && element(1, $menuvalue) !== 'hospital' && element(1, $menuvalue) !== 'statcounter') continue;
+								if($menukey !== 'hospitalgroup' && $menukey !== 'hospital' && $menukey !== 'statcounter') continue;
 							if (element(2, $menuvalue) === 'hide') {
 								continue;
 							}
