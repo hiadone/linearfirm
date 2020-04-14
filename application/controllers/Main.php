@@ -71,16 +71,16 @@ class Main extends CB_Controller
 		 * 레이아웃을 정의합니다
 		 */
 		
-
+		
 		if(empty($section))
 			$page_title = $this->cbconfig->item('site_meta_title_main');
-		elseif($section ==='about')
-			$page_title = 'ABOUT';
-		elseif($section ==='service')
-			$page_title = 'SERVICE';
-		elseif($section ==='work')
-			$page_title = 'WORK';
-		elseif($section ==='contact')
+		elseif($section ==='sectCartridge')
+			$page_title = '카트리지';
+		elseif($section ==='sectAdvantage')
+			$page_title = '특장점';
+		elseif($section ==='sectVideo')
+			$page_title = '영상';
+		elseif($section ==='sectCertification')
 			$page_title = 'CONTACT';
 
 		$view['view']['section'] = $section;
@@ -130,9 +130,9 @@ class Main extends CB_Controller
 		$view = array();
 		$view['view'] = array();
 
-		if ($this->member->is_admin() !== 'super') {
-			redirect('login?url=' . urlencode(current_full_url()));
-		}
+		// if ($this->member->is_admin() !== 'super') {
+		// 	redirect('login?url=' . urlencode(current_full_url()));
+		// }
 
 		// 이벤트가 존재하면 실행합니다
 		$view['view']['event']['before'] = Events::trigger('before', $eventname);

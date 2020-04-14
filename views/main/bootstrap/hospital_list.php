@@ -66,10 +66,14 @@
                                 }
                         ?>
                                 
-                                    
-                                    <li class="hos_box" style="text-align: center;" <?php echo $this->member->is_admin() ? 'onclick=\'location.href="'.admin_url('page/hospital/write?hgr_id='.element('hgr_id',$result)).'"\';': '';?>>
+                                <?php 
+                                if($this->member->is_admin()){
+                                ?>
+                                    <li class="hos_box" style="text-align: center;" onclick='location.href="<?php echo admin_url('page/hospital/write?hgr_id='.element('hgr_id',$result))?>";'>
                                             <span class="glyphicon glyphicon-plus-sign " style="font-size:100px;margin-top:20px;"> </span>
                                         </li>
+                                <?php } ?>
+                                    
                                     
                                 
                         <?php 
@@ -77,10 +81,13 @@
                         ?>      
                            
                                 
-                                <li class="hos_box" style="text-align: center;" <?php echo $this->member->is_admin() ? 'onclick=\'location.href="'.admin_url('page/hospital/write?hgr_id='.element('hgr_id',$result)).'"\';': '';?>>
-                                    <span class="glyphicon glyphicon-plus-sign " style="font-size:100px;margin-top:20px;"> </span>
-                                </li>
-                                
+                                <?php 
+                                if($this->member->is_admin()){
+                                ?>
+                                    <li class="hos_box" style="text-align: center;" onclick='location.href="<?php echo admin_url('page/hospital/write?hgr_id='.element('hgr_id',$result))?>";'>
+                                            <span class="glyphicon glyphicon-plus-sign " style="font-size:100px;margin-top:20px;"> </span>
+                                        </li>
+                                <?php } ?>
                            
                         <?php 
                             }

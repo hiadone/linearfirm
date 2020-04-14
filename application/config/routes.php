@@ -84,3 +84,12 @@ $route['sitemap\.xml'] = "sitemap";
 $route['sitemap_([0-9_-]+)\.xml'] = "sitemap/board/$1";
 
 $route[config_item('uri_segment_cmall_item') . '/([a-zA-Z0-9_-]+)'] = "cmall/item/$1";
+
+$route['main/hospital_list'] = "main/hospital_list";
+
+$route['main/([a-zA-Z0-9_-]+)'] = "main/index/$1";
+
+
+
+
+

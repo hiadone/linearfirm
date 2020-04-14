@@ -15,8 +15,9 @@
                         <li class="gnb_item js-gnb-item"><a href="#sectAdvantage" class="gnb_link js-gnb-link">특장점</a></li>
                         <li class="gnb_item js-gnb-item"><a href="#sectVideo" class="gnb_link js-gnb-link">영상</a></li>
                         <li class="gnb_item js-gnb-item"><a href="#sectCertification" class="gnb_link js-gnb-link">국제인증</a></li>
-                        <?php if ($this->member->is_admin() === 'super') { ?>
                         <li class="gnb_item"><a href="<?php echo base_url('/main/hospital_list'); ?>" class="gnb_link ">병원찾기</a></li>
+                        <?php if ($this->member->is_admin() === 'super') { ?>
+                        <li class="gnb_item"><a href="<?php echo base_url('login/logout'); ?>" class="gnb_link ">Log Out</a></li>
                         <?php } ?>
                     </ul>
                 </nav>
@@ -26,22 +27,22 @@
         <!-- main -->
         <div class="main" style="margin-top:0px;">
             <!-- 심의용x -->
-            <?php if ($this->member->is_admin() === 'super') { ?>
+            
             <div class="quick_link01">
                 <a href="<?php echo base_url('/main/hospital_list');?>" target="_blank"><img src="<?php echo base_url('/assets/images/quick_hospital.png')?>" alt="리니어펌 병원찾기" class="img"></a>
             </div>
-            <?php } ?>
+            
             <!-- 심의용x end -->
 
             <!-- 상단 비디오 -->
             <div class="video_container01">
-                <div class="inner_center">
+                <div class="inner_center" >
                     <video class="video" autoplay loop muted playsinline poster="<?php echo base_url('/assets/images/video_thum_top.jpg')?>">
                         <?php 
                         if($this->cbconfig->get_device_view_type() === 'mobile')
                             echo '<source src="'.base_url('/assets/video/video_top_mo.mp4').'" type="video/mp4">' ;
                         else 
-                            echo '<source src="'.base_url('/assets/video/video_top_pc.mp4').'" type="video/mp4">' ;
+                            echo '<source src="'.base_url('/assets/video/video_top_pc1.mp4').'" type="video/mp4">' ;
                          ?>
                         
                         지원하지 않는 브라우저입니다.
@@ -388,5 +389,13 @@
             $(window).scroll();
         //end
         });
-            
+        
+        $(document).ready(function() {
+            <?php if(element('section',$view)){?>
+                var offset = $('#<?php echo element("section",$view);?>').offset();
+                $('html, body').animate({scrollTop : offset.top-40}, 10);
+                
+            <?php } ?>
+        });
+
     </script>
