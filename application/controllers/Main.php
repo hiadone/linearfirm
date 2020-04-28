@@ -160,8 +160,8 @@ class Main extends CB_Controller
 
 		$findex = $this->input->get('findex', null, 'hpt_order');
 		$forder = $this->input->get('forder', null, 'asc');
-		
-
+		$this->Hospital_group_model->allow_order_field = array('hgr_id','hgr_order'); // 정렬이 가능한 필드
+		$this->Hospital_model->allow_order_field = array('hpt_id','hpt_title','hpt_order','hpt_order, hpt_title'); // 정렬이 가능한 필드
 		$result = $this->Hospital_group_model
 			->get_admin_list('', '', $where, '', $findex, $forder);
 
@@ -180,7 +180,7 @@ class Main extends CB_Controller
 
 				$hwhere['hgr_id'] = element('hgr_id', $val);
 
-				$hresult = $this->Hospital_model->get_admin_list('', '', $hwhere);
+				$hresult = $this->Hospital_model->get_admin_list('', '', $hwhere,'','hpt_order, hpt_title','asc');
 
 				$result['list'][$key]['hlist'] = element('list', $hresult);
 				

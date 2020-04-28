@@ -22,6 +22,8 @@ class Hospital_model extends CB_Model
      */
     public $primary_key = 'hpt_id'; // 사용되는 테이블의 프라이머리키
 
+    
+    public $allow_order_field = array('hpt_id','hpt_title','hpt_order','hpt_order, hpt_title'); //정렬이 가능한 필드
     function __construct()
     {
         parent::__construct();

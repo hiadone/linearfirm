@@ -30,12 +30,24 @@
                         if (element('modify_url', $result)) { 
                                     
                             echo '<a href="'.element('modify_url', $result).'">'.element('hgr_title',$result).'</a>';
-                                    
+                            echo ' <a href="'.admin_url('page/hospital').'?hgr_id='.element('hgr_id',$result).'" class="btn btn-success btn-sm">지역구 관리</a>';
+                            
                         } else {
                             echo element('hgr_title',$result);
                         } 
                         ?>
+                        
                     </h2>
+
+                    
+                
+                    <!-- <?php 
+                        if (element('modify_url', $result)) {                                     
+                            
+                            echo '<a href="'.admin_url('page/hospital').'?hgr_id='.element('hgr_id',$result).'"><span class="glyphicon glyphicon-list" style="font-size:100px;margin-top:20px;"> </span>지역구 리스트</a>';
+                            
+                        } 
+                        ?> -->
                     <ul class="hos_list clearfix">
                         <?php 
                             if (element('hlist',$result)) {

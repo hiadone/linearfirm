@@ -73,7 +73,7 @@ class Hospital extends CB_Controller
 			'hpt_order' => $param->sort('hpt_order', 'asc'),
 			'hpt_datetime' => $param->sort('hpt_datetime', 'asc'),
 		);
-		$findex = $this->input->get('findex', null, 'hpt_order');
+		$findex = $this->input->get('findex', null, 'hpt_order, hpt_title');
 		$forder = $this->input->get('forder', null, 'asc');
 		$sfield = $this->input->get('sfield', null, '');
 		$skeyword = $this->input->get('skeyword', null, '');
@@ -92,7 +92,7 @@ class Hospital extends CB_Controller
 		 */
 		$this->{$this->modelname}->allow_search_field = array('hpt_id', 'hgr_id', 'hpt_title', 'hpt_addr_sub', 'hpt_addr', 'hpt_datetime', 'hpt.mem_id'); // 검색이 가능한 필드
 		$this->{$this->modelname}->search_field_equal = array('hpt_id', 'hgr_id', 'hpt.mem_id'); // 검색중 like 가 아닌 = 검색을 하는 필드
-		$this->{$this->modelname}->allow_order_field = array('hpt_id', 'hpt_title', 'hpt_order', 'hpt_datetime'); // 정렬이 가능한 필드
+		
 		$result = $this->{$this->modelname}
 			->get_admin_list($per_page, $offset, $where, '', $findex, $forder, $sfield, $skeyword);
 		if (element('list', $result)) {

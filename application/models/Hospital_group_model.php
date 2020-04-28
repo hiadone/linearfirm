@@ -26,6 +26,8 @@ class Hospital_group_model extends CB_Model
 
     public $cache_time = 86400; // 캐시 저장시간
 
+    public $allow_order_field = array('hgr_id','hgr_order'); //정렬이 가능한 필드
+    
     function __construct()
     {
         parent::__construct();
