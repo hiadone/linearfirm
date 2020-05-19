@@ -14,7 +14,7 @@
                         <li class="gnb_item js-gnb-item"><a href="#sectCartridge" class="gnb_link js-gnb-link">카트리지</a></li>
                         <li class="gnb_item js-gnb-item"><a href="#sectAdvantage" class="gnb_link js-gnb-link">특장점</a></li>
                         <li class="gnb_item js-gnb-item"><a href="#sectVideo" class="gnb_link js-gnb-link">영상</a></li>
-                        <li class="gnb_item js-gnb-item"><a href="#sectCertification" class="gnb_link js-gnb-link">국제인증</a></li>
+                        <!-- <li class="gnb_item js-gnb-item"><a href="#sectCertification" class="gnb_link js-gnb-link">국제인증</a></li> -->
                         <li class="gnb_item"><a href="<?php echo base_url('/main/hospital_list'); ?>" class="gnb_link ">병원찾기</a></li>
                         <?php if ($this->member->is_admin() === 'super') { ?>
                         <li class="gnb_item"><a href="<?php echo base_url('login/logout'); ?>" class="gnb_link ">Log Out</a></li>
@@ -39,7 +39,7 @@
                 <div class="inner_center" >
                     <?php if($this->cbconfig->get_device_view_type() === 'mobile'){ ?>
                     <video class="video" autoplay loop muted playsinline poster="<?php echo base_url('/assets/images/video_thum_top_mo.jpg')?>">
-                        <source src="<?php echo base_url('/assets/video/video_top_mo.mp4') ?>" type="video/mp4">;
+                        <source src="<?php echo base_url('/assets/video/video_top_pc1.mp4') ?>" type="video/mp4">;
                         지원하지 않는 브라우저입니다.
                     </video>
                     <?php } else { ?>
@@ -60,7 +60,7 @@
                     <div class="txt_container">
                         <h2 class="title01 fadein_ani_ready">리니어펌?</h2>
                         <div class="txt_box fadein_ani_ready">
-                            <div class="txt">
+                            <!-- <div class="txt">
                                 300샷에 3분이라는 빠른 시술 속도로<br>
                             바쁜 직장인들에게 안성맞춤!<br>
                             6종류의 카트리지로 원하는 깊이에 <br class="mo">초음파 에너지를<br class="pc">
@@ -69,6 +69,13 @@
                             <div class="txt">
                                 응고존 형성 후, 피부 수축 효과를 <br class="mo">기대할 수 있는<br class="pc">
                                 초음파 리프팅을 <br class="mo">경험해보세요. 
+                            </div> -->
+                            <div class="txt">
+                                6종류의 카트리지로 원하는 깊이에 <br class="mo">초음파 에너지를<br class="pc"> 
+                                조사하여 <br class="mo">응고존을 형성시킵니다.
+                            </div>
+                            <div class="txt">
+                                새로워진 리니어펌 눈썹리프팅을 만나보세요.
                             </div>
                         </div>
                     </div>
@@ -108,7 +115,7 @@
                             </li>
                         </ul>
                         <div class="txt03 txt_center">
-                            새로워진 선타입 리니어펌 리프팅을 만나보세요.
+                            새로워진 선타입 리니어펌 눈썹리프팅을 만나보세요.
                         </div>
                     </div>
                     <div class="art_cartridge_box">
@@ -119,16 +126,16 @@
                         </h3>
                         <div class="txt02 txt_center fadein_ani_ready">
                             좁은 부위에도 시술 가능한 QS 2.0카트리지는<br>
-                            폭의 길이가 8.6mm으로서 눈썹 등 작은 부분에도 시술이 가능합니다.
+                            카트리지의 너비가 8.7cm로서 눈썹 등 작은 부분에도 시술이 가능합니다.
                         </div>
                         <ul class="cartridge_type_list01 fadein_ani_ready">
-                            <li class="cartridge_type_box">
+                            <!-- <li class="cartridge_type_box">
                                 <img src="<?php echo base_url('/assets/images/cartridge_type_03.jpg')?>" alt="12.5mm" class="img">
                                 <div class="cartridge_type_txt_box">width : 12.5mm</div>
-                            </li>
+                            </li> -->
                             <li class="cartridge_type_box">
                                 <img src="<?php echo base_url('/assets/images/cartridge_type_04.jpg')?>" alt="8.6mm" class="img">
-                                <div class="cartridge_type_txt_box">width : 8.6mm</div>
+                                <div class="cartridge_type_txt_box">width : 8.7cm</div>
                             </li>
                         </ul>
                     </div>
@@ -140,7 +147,8 @@
                 <div class="txt01 txt_center fadein_ani_ready">
                     집속형초음파 트랜스듀서에서 출력된 초음파 에너지의 <br class="mo">열작용을 이용하여 <br class="pc">
                     조직을 응고시켜 <span class="small">EYEBROW</span> <span class="emph">리프팅</span>을 합니다. <br>
-                    피부 얕은 층부터 깊은 층까지 다양한 깊이에 응고존 형성이 가능합니다.
+                    다양한 종류의 카트리지를 통해 피부 얕은 층부터 깊은 층까지<br>
+                    응고존 형성이 가능합니다.
                 </div>
                 <ul class="treatment_step_list clearfix">
                     <li class="treatment_step_box fadein_ani_ready">
@@ -236,7 +244,7 @@
 
             </div>
             <!-- 국제인증 -->
-            <section class="sect_certification" id="sectCertification">
+            <!-- <section class="sect_certification" id="sectCertification">
                 <h2 class="title02 fadein_ani_ready">국제인증</h2>
                 <div class="txt01 txt_center fadein_ani_ready">‘리니어펌’은 세계 각국에서 인증 받은 장비입니다.
                 </div>
@@ -244,7 +252,7 @@
                     <img src="<?php echo base_url('/assets/images/certifications_03.png')?>" alt="인증서 2020 Europe, 2019 Israel, 2018 Australia, 2018 Taiwan" class="img img_pc">
                     <img src="<?php echo base_url('/assets/images/certifications_mo_03.png')?>" alt="인증서 2020 Europe, 2019 Israel, 2018 Australia, 2018 Taiwan" class="img img_mo">
                 </div>
-            </section>
+            </section> -->
         </div>
         <!-- footer -->
         <footer class="footer">
@@ -253,7 +261,14 @@
                 <div class="txt_container">
                     <div class="txt">(주)제이시스메디칼 | 대표명 : 강동환 | 사업자등록번호 : 119-81-75293</div>
                     <div class="txt">주소 : 서울시 금천구 가산동 481-11 대륭테크노타워 8차 307,308,401,410 | TEL : 02.2603.6417</div>
-                    <div class="txt">Mail : marketing@jeisys.com | 광고심의필 : 심의번호 2020-I00-00-0000</div>
+                    <div class="txt">
+                        Mail : marketing@jeisys.com | 광고심의필 : 심의번호 
+                        <?php if($this->cbconfig->get_device_view_type() === 'mobile'){ ?>
+                            2020-I10-14-1253
+                        <?php } else { ?>
+                            2020-ET1-14-0144
+                        <?php } ?>
+                    </div>
                     <div class="txt">품목명 : 집속형초음파자극시스템으로, 집속된 초음파를 이용하여, 조직을 응고시켜 눈썹을 리프팅하는데 사용하는 기구입니다.</div>
                     <div class="txt txt_ml">이 제품은 ‘의료기기’이며, ‘사용상주의사항’과 ‘사용방법’을 잘 읽고 사용하십시오.
                     </div>

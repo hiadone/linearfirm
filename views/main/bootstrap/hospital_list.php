@@ -25,19 +25,21 @@
 
 
                 <div class="list_container">
-                    <h2 class="title04">
-                        <?php 
-                        if (element('modify_url', $result)) { 
-                                    
-                            echo '<a href="'.element('modify_url', $result).'">'.element('hgr_title',$result).'</a>';
-                            echo ' <a href="'.admin_url('page/hospital').'?hgr_id='.element('hgr_id',$result).'" class="btn btn-success btn-sm">지역구 관리</a>';
+                    <div class="txt_center">
+                        <h2 class="title04">
+                            <?php 
+                            if (element('modify_url', $result)) { 
+                                        
+                                echo '<a href="'.element('modify_url', $result).'">'.element('hgr_title',$result).'</a>';
+                                echo ' <a href="'.admin_url('page/hospital').'?hgr_id='.element('hgr_id',$result).'" class="btn btn-success btn-sm">지역구 관리</a>';
+                                
+                            } else {
+                                echo element('hgr_title',$result);
+                            } 
+                            ?>
                             
-                        } else {
-                            echo element('hgr_title',$result);
-                        } 
-                        ?>
-                        
-                    </h2>
+                        </h2>
+                    </div>
 
                     
                 
@@ -115,7 +117,7 @@
                         if (element('write_url', $result)) { 
                                     
                             echo ' <div class="list_container">
-                    <h2 class="title04"><a href="'.element('write_url', $result).'"><span class="glyphicon glyphicon-plus" ></span> 도시 추가</a></h2></div>';
+                    <div class="txt_center"><h2 class="title04"><a href="'.element('write_url', $result).'"><span class="glyphicon glyphicon-plus" ></span> 도시 추가</a></h2></div></div>';
                                     
                         } 
                         ?>
@@ -136,7 +138,14 @@
                 <div class="txt_container">
                     <div class="txt">(주)제이시스메디칼 | 대표명 : 강동환 | 사업자등록번호 : 119-81-75293</div>
                     <div class="txt">주소 : 서울시 금천구 가산동 481-11 대륭테크노타워 8차 307,308,401,410 | TEL : 02.2603.6417</div>
-                    <div class="txt">Mail : marketing@jeisys.com | 광고심의필 : 심의번호 2020-I00-00-0000</div>
+                    <div class="txt">
+                        Mail : marketing@jeisys.com | 광고심의필 : 심의번호 
+                        <?php if($this->cbconfig->get_device_view_type() === 'mobile'){ ?>
+                            2020-I10-14-1253
+                        <?php } else { ?>
+                            2020-ET1-14-0144
+                        <?php } ?>
+                    </div>
                     <div class="txt">품목명 : 집속형초음파자극시스템으로, 집속된 초음파를 이용하여, 조직을 응고시켜 눈썹을 리프팅하는데 사용하는 기구입니다.</div>
                     <div class="txt txt_ml">이 제품은 ‘의료기기’이며, ‘사용상주의사항’과 ‘사용방법’을 잘 읽고 사용하십시오.
                     </div>
