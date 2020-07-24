@@ -48,6 +48,9 @@ class Main extends CB_Controller
 		$view = array();
 		$view['view'] = array();
 
+
+		$view['view']['ga'] = true;
+		
 		// 이벤트가 존재하면 실행합니다
 		$view['view']['event']['before'] = Events::trigger('before', $eventname);
 
