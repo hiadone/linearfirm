@@ -50,14 +50,16 @@ var cookie_prefix = "<?php echo config_item('cookie_prefix'); ?>";
 <script type="text/javascript" src="<?php echo base_url('assets/js/js.cookie.js'); ?>"></script>
 <?php echo $this->managelayout->display_js(); ?>
 <?php if(element('ga', $view)){ ?>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162904376-1">
 
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M5Z4BTJ');</script>
+<!-- End Google Tag Manager -->
 
-  gtag('config', 'UA-162904376-1');
-</script>
+
 <?php } ?>
 
 <!-- Google Tag Manager -->
