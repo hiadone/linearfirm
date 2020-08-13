@@ -68,7 +68,7 @@
                                         width="16" height="24" viewBox="0 0 16 24">
                                             <g>
                                                 <path d="M8,1C3.9,1,0.6,4.3,0.6,8.4C0.6,12.5,8,23,8,23s7.4-10.5,7.4-14.6C15.4,4.3,12.1,1,8,1z M8,12
-                                                    c-2.2,0-4-1.8-4-4c0-2.2,1.8-4,4-4c2.2,0,4,1.8,4,4C12,10.2,10.2,12,8,12z"/>
+                                                    c-2.2,0-4-1.8-4-4c0-2.2,1.8-4,4-4c2.2,0,4,1.8,4,4C12,10.2,10.2,12,8,12z"></path>
                                             </g>
                                         </svg>
                                         <?php echo element('hpt_addr_sub',$hresult); ?>
@@ -169,7 +169,7 @@
             //  }
             // });
 
-            var floatPosition = parseInt($(".quick_link01").css('top'));
+            var floatPosition = parseInt($(".quick_link01").offset().top);
 
             $(window).scroll(function() {
                 var scrollTop = $(window).scrollTop();

@@ -377,7 +377,7 @@
             // });
 
             
-            var floatPosition = parseInt($(".quick_link01").css('top'));
+            var floatPosition = parseInt($(".quick_link01").offset().top);
 
             $(window).scroll(function() {
                 var scrollTop = $(window).scrollTop();
