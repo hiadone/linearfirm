@@ -563,26 +563,42 @@ br.mo {
     position: absolute;
     max-width: 16.43%;
     min-width: 60px;
-    bottom: 196px;
+    /* bottom: 250px; */
+    top: 140px;
     right: 60px;
     z-index: 500;
     transition: bottom .4s ease-in-out;
 }
+.quick_link01 .link {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0;
+    height: 0;
+    padding-bottom: 100%;
+}
 .quick_link01 .img {
     max-width: 100%;
+    font-size: 10px;
 }
 .quick_link01.off {
     bottom: -100px;
 }
+@media screen and (min-width: 1460px){
+    .quick_link01 {
+        right: calc(50% - 720px);
+    }
+}
 @media screen and (max-width: 1199px){
     .quick_link01 {
-        bottom: 140px;
+        /* bottom: 140px; */
+        top: 200px;
         right: 5%;
     }
 }
 @media screen and (max-width: 768px){
     .quick_link01 {
-        bottom: 170px;
+        /* bottom: 170px; */
+        top: 240px;
         right: 2.38095%;
     }
 }
@@ -590,6 +606,7 @@ br.mo {
 /* 상단 비디오 */
 .video_container01 {
     margin-bottom: 72px;
+    height: 500px;
 }
 .video_container01 .inner_center {
     font-size: 0;
@@ -601,6 +618,7 @@ br.mo {
 @media screen and (max-width: 1199px){
     .video_container01 {
         margin-bottom: 6%;
+        height: 41.6667vw;
     }
 }
 @media screen and (max-width: 768px){

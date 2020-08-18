@@ -14,6 +14,9 @@
         </header>
         <div class="main" style="margin-top:0px;">
             <div class="quick_link01">
+                <!-- 추가 : 리니어펌 검색하기 -->
+                <a href="http://dev.dbpopcon.com/postact/media_multi_link/201/default" class="link" target="_blank"><img src="<?php echo base_url('/assets/images/quick_search.png')?>" alt="리니어펌 검색하기" class="img"></a>
+                <!--  -->
                 <a href="<?php echo base_url();?>"><img src="<?php echo base_url('/assets/images/quick_detail.png')?>" alt="리니어펌 병원찾기" class="img"></a>
             </div>
             <div class="list_wrap">
@@ -159,7 +162,7 @@
     </div>
 
     <script>
-        $(function(){
+        $(window).load(function(){
             // $(window).scroll(function(){
             //  if ( 10 < $(document).scrollTop() )
             //  {

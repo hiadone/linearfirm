@@ -29,7 +29,10 @@
             <!-- 심의용x -->
             
             <div class="quick_link01">
-                <a href="<?php echo base_url('/main/hospital_list');?>" ><img src="<?php echo base_url('/assets/images/quick_hospital.png')?>" alt="리니어펌 병원찾기" class="img"></a>
+                <!-- 추가 : 리니어펌 검색하기 -->
+                <a href=" http://dev.dbpopcon.com/postact/media_multi_link/201/default" class="link" target="_blank"><img src="<?php echo base_url('/assets/images/quick_search.png')?>" alt="리니어펌 검색하기" class="img"></a>
+                <!--  -->
+                <a href="<?php echo base_url('/main/hospital_list');?>" class="link"><img src="<?php echo base_url('/assets/images/quick_hospital.png')?>" alt="리니어펌 병원찾기" class="img"></a>
             </div>
             
             <!-- 심의용x end -->
@@ -377,21 +380,6 @@
             // });
 
             
-            var floatPosition = parseInt($(".quick_link01").offset().top);
-
-            $(window).scroll(function() {
-                var scrollTop = $(window).scrollTop();
-                var newPosition = scrollTop + floatPosition + "px";
-
-                $(".quick_link01").stop().animate({
-                    "top" : newPosition
-                },{
-                    'duration' : 500,
-                    'easing' : 'easeOutCirc',
-                });
-
-            }).scroll();
-
             
             //스크롤시 요소 fadeIn animation
             $(window).scroll(function() {
@@ -405,11 +393,28 @@
                 });
             });
 
-            /* On Load: Trigger Scroll Once*/
-            $(window).scroll();
+            
         //end
         });
-        
-       
+        $(window).load(function(){
+            var floatPosition = parseInt($(".quick_link01").offset().top);
 
+            $(window).scroll(function() {
+                var scrollTop = $(window).scrollTop();
+                var newPosition = scrollTop + floatPosition + "px";
+
+                $(".quick_link01").stop().animate({
+                    "top" : newPosition,
+                },{
+                    'duration' : 500,
+                    'easing' : 'easeOutCirc',
+                });
+                // console.log(floatPosition,scrollTop);
+
+            });
+            
+            /* On Load: Trigger Scroll Once*/
+            $(window).scroll();
+        });
+        
     </script>
