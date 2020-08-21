@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="main" style="margin-top:0px;">
             <div class="quick_link01">
                 <!-- 추가 : 리니어펌 검색하기 -->
-                <a href="http://dev.dbpopcon.com/postact/media_multi_link/201/default" class="link" target="_blank"><img src="<?php echo base_url('/assets/images/quick_search.png')?>" alt="리니어펌 검색하기" class="img"></a>
+                <a href="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=%EB%A6%AC%EB%8B%88%EC%96%B4%ED%8E%8C" class="link" target="_blank" id="search_naver"><img src="<?php echo base_url('/assets/images/quick_search.png')?>" alt="리니어펌 검색하기" class="img"></a>
                 <!--  -->
                 <a href="<?php echo base_url();?>"><img src="<?php echo base_url('/assets/images/quick_detail.png')?>" alt="리니어펌 병원찾기" class="img"></a>
             </div>
