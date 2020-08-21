@@ -17,6 +17,7 @@ class Managelayout extends CI_Controller
 
 	private $css = array();
 	private $js = array();
+	private $head = array();
 
 	function __construct()
 	{
@@ -344,6 +345,14 @@ class Managelayout extends CI_Controller
 		array_push($this->js, $file);
 	}
 
+	function add_head($text = '')
+	{
+		if (empty($text)) {
+			return;
+		}
+		array_push($this->head, $text);
+	}
+
 
 	/**
 	 * 추가된 css를 리턴합니다
@@ -375,4 +384,16 @@ class Managelayout extends CI_Controller
 		}
 		return $return;
 	}
+
+	function display_head()
+    {
+        $return = '';
+        $_head = $this->head;
+        if ($_head) {
+            foreach ($_head as $val) {
+                $return .= $val;
+            }
+        }
+        return $return;
+    }
 }

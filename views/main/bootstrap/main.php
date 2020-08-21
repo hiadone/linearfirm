@@ -1,3 +1,12 @@
+<?php 
+
+$this->managelayout->add_head("<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M5Z4BTJ');</script>"); 
+ ?>
+
     <div class="wrap">
         <!-- header -->
         <header class="header">
@@ -30,7 +39,7 @@
             
             <div class="quick_link01">
                 <!-- 추가 : 리니어펌 검색하기 -->
-                <a href=" http://dev.dbpopcon.com/postact/media_multi_link/201/default" class="link" target="_blank"><img src="<?php echo base_url('/assets/images/quick_search.png')?>" alt="리니어펌 검색하기" class="img"></a>
+                <a href="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=%EB%A6%AC%EB%8B%88%EC%96%B4%ED%8E%8C" class="link" target="_blank"><img src="<?php echo base_url('/assets/images/quick_search.png')?>" alt="리니어펌 검색하기" class="img"></a>
                 <!--  -->
                 <a href="<?php echo base_url('/main/hospital_list');?>" class="link"><img src="<?php echo base_url('/assets/images/quick_hospital.png')?>" alt="리니어펌 병원찾기" class="img"></a>
             </div>
@@ -285,6 +294,21 @@
     </div>
 
     <script>
+
+
+        function search_naver() {
+            var flag=false;
+            var href;
+                
+            ga('send', 'event', 'button', 'click');
+
+            href ='https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=%EB%A6%AC%EB%8B%88%EC%96%B4%ED%8E%8C';            
+            // window.open(href, '_blank'); 
+
+
+            // return false;
+        }
+
         $(function(){
             //모바일 헤더 여닫기
             var $gnbPanel = $('.js-gnb-panel')
