@@ -214,7 +214,7 @@ class Hospital extends CB_Controller
 			array(
 				'field' => 'hpt_addr',
 				'label' => '시도 구명',
-				'rules' => 'trim|required',
+				'rules' => 'trim',
 			),			
 		);
 
