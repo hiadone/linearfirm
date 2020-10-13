@@ -145,8 +145,7 @@ class Main extends CB_Controller
 
 		
 		$view['view']['canonical'] = site_url();
-		if ($is_admin) 
-			$view['view']['list_url'] = admin_url('page/hospitalgroup');
+		
 		// 이벤트가 존재하면 실행합니다
 		$view['view']['event']['before_layout'] = Events::trigger('before_layout', $eventname);
 
@@ -161,6 +160,9 @@ class Main extends CB_Controller
 		$hwhere = array('hpt_display' => 1);
 
 		$is_admin = $this->member->is_admin();
+
+		if ($is_admin) 
+			$view['view']['list_url'] = admin_url('page/hospitalgroup');
 
 		$findex = $this->input->get('findex', null, 'hpt_order');
 		$forder = $this->input->get('forder', null, 'asc');
