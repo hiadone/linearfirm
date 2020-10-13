@@ -145,7 +145,8 @@ class Main extends CB_Controller
 
 		
 		$view['view']['canonical'] = site_url();
-
+		if ($is_admin) 
+			$view['view']['list_url'] = admin_url('page/hospitalgroup');
 		// 이벤트가 존재하면 실행합니다
 		$view['view']['event']['before_layout'] = Events::trigger('before_layout', $eventname);
 
@@ -173,8 +174,8 @@ class Main extends CB_Controller
 
 				$result['list'][$key]['write_url'] = '';
 
-				if ($is_admin) 
-					$result['list'][$key]['list_url'] = admin_url('page/hospitalgroup');
+				// if ($is_admin) 
+				// 	$result['list'][$key]['list_url'] = admin_url('page/hospitalgroup');
 
 				if ($is_admin) {
 					$result['list'][$key]['modify_url'] = admin_url('page/hospitalgroup/write/'.element('hgr_id', $val));
@@ -190,7 +191,7 @@ class Main extends CB_Controller
 			}
 		}
 		
-
+		
 		$view['view']['data'] = $result;
 
 

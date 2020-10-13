@@ -137,9 +137,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <?php 
                     } 
                 ?>
-            <?php if (element('list_url', $result)) { ?>
+            <?php if (element('list_url', $view)) { ?>
                 <div class="hos_list ">
-                    <a href="<?php echo element('list_url', $result); ?>" class="btn btn-success btn-sm">병원 관리</a>
+                    <a href="<?php echo element('list_url', $view); ?>" class="btn btn-success btn-sm">병원 관리</a>
                 </div>
             <?php } ?>
             </div>
