@@ -104,7 +104,7 @@ src='https://www.facebook.com/tr?id=1753298861503613&ev=PageView&noscript=1'
                                 초음파 리프팅을 <br class="mo">경험해보세요. 
                             </div> -->
                             <div class="txt">
-                                6종류의 카트리지로 원하는 깊이에 <br class="mo">초음파 에너지를<br class="pc"> 
+                                7종류의 카트리지로 원하는 깊이에 <br class="mo">초음파 에너지를<br class="pc"> 
                                 조사하여 <br class="mo">응고존을 형성시킵니다.
                             </div>
                             <div class="txt">
@@ -119,7 +119,7 @@ src='https://www.facebook.com/tr?id=1753298861503613&ev=PageView&noscript=1'
                 <h2 class="title02 fadein_ani_ready">카트리지</h2>
                 <div class="inner_center">
                     <div class="txt01 txt_center fadein_ani_ready">
-                        6종 카트리지로 피부층별 섬세한 에너지 전달,<br>
+                        7종 카트리지로 피부층별 섬세한 에너지 전달,<br>
                         다양한 깊이에 응고존을 형성시킵니다.
                     </div>
                     <div class="img_box01 txt_center fadein_ani_ready">
@@ -248,7 +248,7 @@ src='https://www.facebook.com/tr?id=1753298861503613&ev=PageView&noscript=1'
                         <div class="advantage_what"><img src="<?php echo base_url('/assets/images/advantage_what_title_04.png')?>" alt="what? 04" class="img"></div>
                         <div class="advantage_txt_box">
                             <div class="advantage_txt">
-                                6가지 종류의 카트리지로<br>
+                                7가지 종류의 카트리지로<br>
                                 피부 속 다양한 층까지<br>
                                 <span class="emph">에너지 전달</span>
                             </div>
