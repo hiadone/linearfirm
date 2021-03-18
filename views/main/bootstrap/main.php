@@ -292,7 +292,7 @@ src='https://www.facebook.com/tr?id=1753298861503613&ev=PageView&noscript=1'
             <div class="footer_inner_center">
                 <div class="logo_img"><img src="<?php echo base_url('/assets/images/logo_jeisys.svg')?>" alt="제이시스 로고" class="img"></div>
                 <div class="txt_container">
-                    <div class="txt">(주)제이시스메디칼 | 대표명 : 강동환 | 사업자등록번호 : 119-81-75293</div>
+                    <div class="txt">(주)제이시스메디칼 | 대표명 : 강동환 | 사업자등록번호 : 424-87-00852</div>
                     <div class="txt">주소 : 서울시 금천구 가산동 481-11 대륭테크노타워 8차 307,308,401,410 | TEL : 02.2603.6417</div>
                     <div class="txt">
                         Mail : marketing@jeisys.com | 광고심의필 : 심의번호 
