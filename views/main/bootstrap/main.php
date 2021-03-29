@@ -287,31 +287,7 @@ src='https://www.facebook.com/tr?id=1753298861503613&ev=PageView&noscript=1'
                 </div>
             </section> -->
         </div>
-        <!-- footer -->
-        <footer class="footer">
-            <div class="footer_inner_center">
-                <div class="logo_img"><img src="<?php echo base_url('/assets/images/logo_jeisys.svg')?>" alt="제이시스 로고" class="img"></div>
-                <div class="txt_container">
-                    <div class="txt">(주)제이시스메디칼 | 대표명 : 강동환 | 사업자등록번호 : 424-87-00852</div>
-                    <div class="txt">주소 : 서울시 금천구 가산동 481-11 대륭테크노타워 8차 307,308,401,410 | TEL : 02.2603.6417</div>
-                    <div class="txt">
-                        Mail : marketing@jeisys.com | 광고심의필 : 심의번호 
-                        <?php if($this->cbconfig->get_device_view_type() === 'mobile'){ ?>
-                            2020-I10-14-1253
-                        <?php } else { ?>
-                            2020-ET1-14-0144
-                        <?php } ?>
-                    </div>
-                    <div class="txt">품목명 : 집속형초음파자극시스템으로, 집속된 초음파를 이용하여, 조직을 응고시켜 눈썹을 리프팅하는데 사용하는 기구입니다.</div>
-                    <div class="txt txt_ml">이 제품은 ‘의료기기’이며, ‘사용상주의사항’과 ‘사용방법’을 잘 읽고 사용하십시오.
-                    </div>
-                </div>
-                <div class="sns_box">
-                    <a href="https://www.youtube.com/channel/UCqAKu5loQ8arXmiVQ-SFXQQ?view_as=subscriber" class="sns_link sns_youtube"><img src="<?php echo base_url('/assets/images/logo_youtube.svg')?>" alt="제이시스 유튜브" class="img"></a>
-                    <a href="https://www.instagram.com/jeisysmedical_kr/" class="sns_link sns_instagram"><img src="<?php echo base_url('/assets/images/logo_instagram.svg')?>" alt="제이시스 인스타그램" class="img"></a>
-                </div>
-            </div>
-        </footer>
+        <?php echo $this->managelayout->display_footer()?>         
     </div>
 
     <script>

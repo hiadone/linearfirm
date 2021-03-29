@@ -69,11 +69,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <div class="wrapper">
 
-	<?php if ($this->cbconfig->get_device_view_type() !== 'mobile') {} else {} ?>
+	<?php if ($this->cbconfig->get_device_view_type() !== 'mobile') {} ?>
+    <?php if ($this->cbconfig->get_device_view_type() === 'mobile') {} ?>
 
-	
-
-<?php if ($this->cbconfig->get_device_view_type() === 'mobile') {} ?>
 	<!-- 본문 시작 -->
 	<?php if (isset($yield))echo $yield; ?>
 	<!-- 본문 끝 -->
