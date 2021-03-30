@@ -36,8 +36,14 @@ src='https://www.facebook.com/tr?id=1753298861503613&ev=PageView&noscript=1'
                         else 
                             echo '<img src="'.base_url('/assets/images/hospital_list_header_01.jpg').'" alt="리니어펌 운영 병원 리스트" class="img img_pc" usemap="#Map" >' ;
                          ?>
-                    <map name="Map" id="Map">
-                        <area shape="rect" coords="70,80,472,236" onClick="javascript:location.href='/'"  style="cursor:pointer">
+                    <map name="Map" id="Map" >
+                        <?php 
+                        if($this->cbconfig->get_device_view_type() === 'mobile')
+                            echo '<area shape="rect" coords="18,48,158,147" onClick="javascript:location.href=\'/\'"  style="cursor:pointer">' ;
+                        else 
+                            echo '<area shape="rect" coords="70,80,472,236" onClick="javascript:location.href=\'/\'"  style="cursor:pointer">' ;
+                         ?>
+                        
                     </map>
 
 
