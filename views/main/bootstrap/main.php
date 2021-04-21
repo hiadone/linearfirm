@@ -68,7 +68,7 @@ src='https://www.facebook.com/tr?id=1753298861503613&ev=PageView&noscript=1'
             <!-- 심의용x end -->
 
             <!-- 상단 비디오 -->
-            <div class="video_container01">
+            <!-- <div class="video_container01">
                 <div class="inner_center" >
                     <?php if($this->cbconfig->get_device_view_type() === 'mobile'){ ?>
                     <video class="video" autoplay loop muted playsinline poster="<?php echo base_url('/assets/images/video_thum_top_mo.jpg')?>">
@@ -82,7 +82,7 @@ src='https://www.facebook.com/tr?id=1753298861503613&ev=PageView&noscript=1'
                     </video>
                     <?php } ?>
                 </div>
-            </div>
+            </div> -->
             <!-- 리니어펌? -->
             <section class="sect_linearfirm" id="sectLinearFirm">
                 <div class="inner_center clearfix">
@@ -104,9 +104,10 @@ src='https://www.facebook.com/tr?id=1753298861503613&ev=PageView&noscript=1'
                                 초음파 리프팅을 <br class="mo">경험해보세요. 
                             </div> -->
                             <div class="txt">
-                                7종류의 카트리지로 원하는 깊이에 <br class="mo">초음파 에너지를<br class="pc"> 
-                                조사하여 <br class="mo">응고존을 형성시킵니다.
+                                10종류의 카트리지로 원하는 깊이에 <br class="mo">초음파 에너지를<br class="pc"> 
+                                조사하여 <br class="mo">응고존을 형성시킵니다.                                
                             </div>
+
                             <div class="txt">
                                 새로워진 리니어펌 눈썹리프팅을 만나보세요.
                             </div>
@@ -119,11 +120,21 @@ src='https://www.facebook.com/tr?id=1753298861503613&ev=PageView&noscript=1'
                 <h2 class="title02 fadein_ani_ready">카트리지</h2>
                 <div class="inner_center">
                     <div class="txt01 txt_center fadein_ani_ready">
-                        7종 카트리지로 피부층별 섬세한 에너지 전달,<br>
-                        다양한 깊이에 응고존을 형성시킵니다.
+                        10종 카트리지로 피부층별 섬세한 에너지 전달,<br>
+                        다양한 깊이에 응고존을 형성시킵니다.                        
+                    </div>
+                    <div class="txt01 txt_center fadein_ani_ready">
+                        [EYEBROW 리프팅]
                     </div>
                     <div class="img_box01 txt_center fadein_ani_ready">
                         <img src="<?php echo base_url('/assets/images/cartridge_01.png')?>" alt="카트리지별 에너지전달 피부층" class="img">
+                    </div>
+
+                    <div class="txt01 txt_center fadein_ani_ready">
+                        [허벅지 피부 탄력 개선]
+                    </div>
+                    <div class="img_box01 txt_center fadein_ani_ready">
+                        <img src="<?php echo base_url('/assets/images/cartridge_02.png')?>" alt="카트리지별 에너지전달 피부층" class="img">
                     </div>
                 </div>
                 <div class="art_cartridge">
@@ -179,7 +190,7 @@ src='https://www.facebook.com/tr?id=1753298861503613&ev=PageView&noscript=1'
                 <h2 class="title02 fadein_ani_ready">시술원리</h2>
                 <div class="txt01 txt_center fadein_ani_ready">
                     집속형초음파 트랜스듀서에서 출력된 초음파 에너지의 <br class="mo">열작용을 이용하여 <br class="pc">
-                    조직을 응고시켜 <span class="small">EYEBROW</span> <span class="emph">리프팅</span>을 합니다. <br>
+                    조직을 응고시켜 <span class="emph">'눈썹 리프팅 및 허벅지 피부탄력 개선'</span> 을 합니다. <br>
                     다양한 종류의 카트리지를 통해 피부 얕은 층부터 깊은 층까지<br>
                     응고존 형성이 가능합니다.
                 </div>
@@ -248,7 +259,7 @@ src='https://www.facebook.com/tr?id=1753298861503613&ev=PageView&noscript=1'
                         <div class="advantage_what"><img src="<?php echo base_url('/assets/images/advantage_what_title_04.png')?>" alt="what? 04" class="img"></div>
                         <div class="advantage_txt_box">
                             <div class="advantage_txt">
-                                7가지 종류의 카트리지로<br>
+                                10가지 종류의 카트리지로<br>
                                 피부 속 다양한 층까지<br>
                                 <span class="emph">에너지 전달</span>
                             </div>
