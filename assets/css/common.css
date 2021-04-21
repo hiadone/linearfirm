@@ -240,7 +240,7 @@ br.mo {
     letter-spacing: 0.01em;
     font-weight: 700;
     font-size: 45px;
-    color: #ff6eab;
+    color: #ff725b;
 }
 .title01:after {
     content: '';
@@ -248,7 +248,7 @@ br.mo {
     width: 5px;
     height: 23px;
     transform: rotate(30deg);
-    background-color: rgba(255,110,171,0.39);
+    background-color: rgba(255,114,91,0.39);
     margin-top: 24px;
     margin-left: 8px;
 }
@@ -256,7 +256,7 @@ br.mo {
     letter-spacing: 0.01em;
     font-weight: 700;
     font-size: 45px;
-    color: #ff6eab;
+    color: #ff725b;
     text-align: center;
 }
 .title02:after {
@@ -265,7 +265,7 @@ br.mo {
     width: 5px;
     height: 23px;
     transform: rotate(30deg);
-    background-color: rgba(255,110,171,0.29);
+    background-color: rgba(255,114,91,0.29);
     margin: 24px auto 0;
 }
 .title03 {
@@ -301,7 +301,7 @@ br.mo {
     line-height: 42px;
     margin: 0 auto;
     border-radius: 40px;
-    background-color: #ff6eab;
+    background-color: #ff725b;
     font-size: 26px;
     font-weight: 700;
     color: #fefefe;
@@ -398,7 +398,7 @@ br.mo {
     float: left;
 }
 .header .h_logo {
-    width: 136px;
+    width: 356px;
     margin-top:  12px;
     margin-left: 25px;
 }
@@ -515,7 +515,7 @@ br.mo {
         margin-left: 3%;
     }
     .header .h_logo {
-        width: 115px;
+        width: 265px;
         margin-top: 10px;
         margin-left: 0;
     }
@@ -658,6 +658,7 @@ br.mo {
 .sect_linearfirm .img_box {
     float: left;
     font-size: 0;
+    width:600px;
 }
 .sect_linearfirm .img_box .img{
     max-width: 100%;
@@ -666,6 +667,8 @@ br.mo {
 .sect_linearfirm .img_box .img_mo {
     display: none;
 }
+
+
 @media screen and (max-width: 1199px) {
     .sect_linearfirm {
         position: relative;
@@ -711,6 +714,7 @@ br.mo {
         display: none;
     }
     .sect_linearfirm .img_box .img_mo {
+        margin-top: 20%;
         display: inline-block;
     }
     .sect_linearfirm .txt_container {
@@ -779,7 +783,7 @@ br.mo {
 .sect_cartridge .txt03 { 
     font-size: 21px;
     font-weight: 700;
-    color: #ff6eab;
+    color: #ff725b;
     letter-spacing: -0.03em; 
 }
 .sect_cartridge .cartridge_type_list01 {
@@ -894,7 +898,7 @@ br.mo {
 /* 시술원리 */
 .sect_treatment_principle {
     padding: 80px 0 75px;
-    background-color: #ffeff3;
+    background-color: #fff;
 }
 .sect_treatment_principle .txt01 {
     margin: 30px 0 40px;
@@ -920,7 +924,7 @@ br.mo {
     font-size: 0;
 }
 .sect_treatment_principle .treatment_step_box:not(:last-child) {
-    margin-right: 15px;
+    margin-right: 5px;
 }
 .sect_treatment_principle .treatment_step_box .img {
     max-width: 100%;
@@ -931,7 +935,7 @@ br.mo {
 }
 @media screen and (max-width: 1199px) {
     .sect_treatment_principle .treatment_step_box:not(:last-child) {
-        width: calc(25.998% - 15px);
+        width: calc(25.998% - 5px);
     }
     .sect_treatment_principle .treatment_step_box:last-child {
         width: 22.0062%;
@@ -982,8 +986,8 @@ br.mo {
 /* 특장점 */
 .sect_advantage {
     padding: 80px 0;
-    background-color: #ffe2e9;
-    background-image: url(/assets/images/advantage_bg_01.png);
+    background-color: #fff;
+    /*background-image: url(/assets/images/advantage_bg_01.png);*/
     background-repeat: no-repeat;
     background-position: calc(50% - 554px) 35px;
 }
@@ -1389,7 +1393,7 @@ br.mo {
     margin-bottom: 8px;
     margin-right: 8px;
     cursor: pointer;
-    background-color: #ffe2e9;
+    background-color: #ff725b;
 }
 .hos_list .hos_box:nth-child(4n){
     margin-right: 0;
@@ -1421,7 +1425,7 @@ br.mo {
     fill: #da1858;
 }
 .hos_list .hos_box:hover {
-    background-color: #ff73ae;
+    background-color: #FFA293;
 }
 .hos_list .hos_box:hover .hos_name {
     color: #fff;
