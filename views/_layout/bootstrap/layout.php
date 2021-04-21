@@ -60,7 +60,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-5S6CPGZ');</script> -->
 <!-- End Google Tag Manager -->
-
+<script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/adfit/static/kp.js"></script>
+<script type="text/javascript">
+      kakaoPixel('8328026460603858780').pageView();
+</script>
 </head>
 <body <?php echo isset($view) ? element('body_script', $view) : ''; ?>>
 <!-- Google Tag Manager (noscript) -->
