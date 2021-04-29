@@ -1,20 +1,8 @@
-<?
-    @ob_start(); 
-    header('Expires: Mon, 26 Jul 1997 05:00:00 GMT'); 
-    header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . 'GMT'); 
-    header('Cache-Control: no-cache, must-revalidate'); 
-    header('Pragma: no-cache');
-    header('content-type:text/html; charset=utf-8');
-?>
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta http-equiv="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT"> 
-<meta http-equiv="Expires" content="-1"> 
-<meta http-equiv="Pragma" content="no-cache"> 
-<meta http-equiv="Cache-Control" content="no-cache">
 <?php if ($this->cbconfig->get_device_view_type() === 'desktop' && $this->cbconfig->get_device_type() === 'mobile') { ?>
 <meta name="viewport" content="width=1000">
 <?php } else { ?>
@@ -29,7 +17,7 @@
 <?php if (element('canonical', $view)) { ?><link rel="canonical" href="<?php echo element('canonical', $view); ?>" /><?php } ?>
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/bootstrap.min.css');?>" />
 
-<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/common.css');?>" />
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/common.css?u='.date('Ymd'));?>" />
 <?php echo $this->managelayout->display_css(); ?>
 <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.min.js');?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/jquery-ui.min.js');?>"></script>
