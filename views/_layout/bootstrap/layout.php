@@ -1,3 +1,8 @@
+<?php
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache");
+?>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -17,7 +22,7 @@
 <?php if (element('canonical', $view)) { ?><link rel="canonical" href="<?php echo element('canonical', $view); ?>" /><?php } ?>
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/bootstrap.min.css');?>" />
 
-<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/common.css?u='.date('Ymd'));?>" />
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/common.css');?>" />
 <?php echo $this->managelayout->display_css(); ?>
 <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.min.js');?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/jquery-ui.min.js');?>"></script>
