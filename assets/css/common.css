@@ -656,9 +656,9 @@ br.mo {
     word-break: keep-all;
 }
 .sect_linearfirm .img_box {
-    float: left;
+    /*float: left;*/
     font-size: 0;
-    width:600px;
+    /*width:600px;*/
 }
 .sect_linearfirm .img_box .img{
     max-width: 100%;
@@ -686,7 +686,7 @@ br.mo {
         font-size: 20px;
     }
     .sect_linearfirm .img_box {
-        width: 47.5%;
+        /*width: 47.5%;*/
     }
 }
 @media screen and (max-width: 768px) {
@@ -702,19 +702,19 @@ br.mo {
     .sect_linearfirm {
         position: relative;
         margin-bottom: 0;
-        padding-bottom: 6.66%;
+        /*padding-bottom: 6.66%;*/
     }
     .sect_linearfirm:before {
         height: 100%;
     }
     .sect_linearfirm .img_box {
-        width: 39%;
+        /*width: 39%;*/
     }
     .sect_linearfirm .img_box .img_pc {
         display: none;
     }
     .sect_linearfirm .img_box .img_mo {
-        margin-top: 20%;
+        /*margin-top: 20%;*/
         display: inline-block;
     }
     .sect_linearfirm .txt_container {
@@ -749,7 +749,7 @@ br.mo {
     margin: 36px 0;
     font-size: 24px;
     line-height: 1.24;
-    color: #7f7f7f;
+    color: #ff725b;
     letter-spacing: -0.03em;
 }
 .sect_cartridge .img_box01 {
@@ -995,14 +995,15 @@ br.mo {
     width: 1176px;
     margin: 36px auto 0;
 }
+
 .sect_advantage .advantage_box {
     float: left;
-    width: 288px;
+    width: 386px;
     padding-top: 36px;
     background-color: #fff;
 }
 .sect_advantage .advantage_box:not(:last-child) {
-    margin-right: 8px;
+    margin-right: 9px;
 }
 .sect_advantage .advantage_what:after {
     content: '';
@@ -1019,7 +1020,7 @@ br.mo {
 .sect_advantage .advantage_txt {
     display: table-cell;
     width: 100%;
-    height: 130px;
+    height: 160px;
     vertical-align: middle;
     font-size: 23px;
     line-height: 1.58;
@@ -1049,7 +1050,7 @@ br.mo {
     }
     .sect_advantage .advantage_box {
         float: left;
-        width: calc(25% - 6px);
+        width: calc(33% - 6px);
         padding-top: 36px;
         background-color: #fff;
     }
@@ -1069,7 +1070,7 @@ br.mo {
         max-width: 500px;
     }
     .sect_advantage .advantage_box {
-        width: calc(50% - 4px);
+        width: calc(100% - 4px);
         padding-top: 24px;
         margin-bottom: 8px;
     }
@@ -1393,7 +1394,7 @@ br.mo {
     margin-bottom: 8px;
     margin-right: 8px;
     cursor: pointer;
-    background-color: #ff725b;
+    background-color: #ffa293;
 }
 .hos_list .hos_box:nth-child(4n){
     margin-right: 0;
@@ -1422,10 +1423,10 @@ br.mo {
 .hos_list .hos_address .icon {
     height: 24px;
     vertical-align: middle;
-    fill: #da1858;
+    fill: #fff;
 }
 .hos_list .hos_box:hover {
-    background-color: #FFA293;
+    background-color: #ff725b;
 }
 .hos_list .hos_box:hover .hos_name {
     color: #fff;
@@ -1499,3 +1500,4 @@ br.mo {
         margin-right: 0;
     }
 }
+

@@ -39,70 +39,48 @@
             <!-- 심의용x end -->
 
             <!-- 상단 비디오 -->
-            <!-- <div class="video_container01">
+            <div class="video_container01">
                 <div class="inner_center" >
                     <?php if($this->cbconfig->get_device_view_type() === 'mobile'){ ?>
-                    <video class="video" autoplay loop muted playsinline poster="<?php echo base_url('/assets/images/video_thum_top_mo.jpg')?>">
-                        <source src="<?php echo base_url('/assets/video/video_top_pc1.mp4') ?>" type="video/mp4">;
+                    <video class="video" autoplay loop muted playsinline poster="<?php echo base_url('/assets/images/video_thum_top.png')?>">
+                        <source src="<?php echo base_url('/assets/video/video_top_pc4.mp4') ?>" type="video/mp4">;
                         지원하지 않는 브라우저입니다.
                     </video>
                     <?php } else { ?>
-                    <video class="video" autoplay loop muted playsinline poster="<?php echo base_url('/assets/images/video_thum_top.jpg')?>">
-                        <source src="<?php echo base_url('/assets/video/video_top_pc1.mp4') ?>" type="video/mp4">;
+                    <video class="video" autoplay loop muted playsinline poster="<?php echo base_url('/assets/images/video_thum_top.png')?>">
+                        <source src="<?php echo base_url('/assets/video/video_top_pc4.mp4') ?>" type="video/mp4">;
                         지원하지 않는 브라우저입니다.
                     </video>
                     <?php } ?>
                 </div>
-            </div> -->
+            </div>
             <!-- 리니어펌? -->
             <section class="sect_linearfirm" id="sectLinearFirm">
-                <div class="inner_center clearfix">
+                <div class="inner_center">
                     <div class="img_box">
-                        <img src="<?php echo base_url('/assets/images/sect_linearfirm_01.png')?>" alt="기기 이미지" class="img img_pc">
-                        <img src="<?php echo base_url('/assets/images/sect_linearfirm_01_mo.png')?>" alt="기기 이미지" class="img img_mo">
-                    </div>
-                    <div class="txt_container">
-                        <h2 class="title01 fadein_ani_ready">리니어펌?</h2>
-                        <div class="txt_box fadein_ani_ready">
-                            <!-- <div class="txt">
-                                300샷에 3분이라는 빠른 시술 속도로<br>
-                            바쁜 직장인들에게 안성맞춤!<br>
-                            6종류의 카트리지로 원하는 깊이에 <br class="mo">초음파 에너지를<br class="pc">
-                            조사하여 <br class="mo">응고존을 형성시킵니다.
-                            </div>
-                            <div class="txt">
-                                응고존 형성 후, 피부 수축 효과를 <br class="mo">기대할 수 있는<br class="pc">
-                                초음파 리프팅을 <br class="mo">경험해보세요. 
-                            </div> -->
-                            <div class="txt">
-                                10종류의 카트리지로 원하는 깊이에 <br class="mo">초음파 에너지를<br class="pc"> 
-                                조사하여 <br class="mo">응고존을 형성시킵니다.                                
-                            </div>
-
-                            <div class="txt">
-                                새로워진 리니어펌 눈썹리프팅을 만나보세요.
-                            </div>
-                        </div>
+                        <img src="<?php echo base_url('/assets/images/main.png')?>" alt="기기 이미지" class="img img_pc">
+                        <img src="<?php echo base_url('/assets/images/main.png')?>" alt="기기 이미지" class="img img_mo">
                     </div>
                 </div>
             </section>
+
             <!-- 카트리지 -->
             <section class="sect_cartridge" id="sectCartridge">
                 <h2 class="title02 fadein_ani_ready">카트리지</h2>
                 <div class="inner_center">
-                    <div class="txt01 txt_center fadein_ani_ready">
-                        10종 카트리지로 피부층별 섬세한 에너지 전달,<br>
+                    <div class="txt01 txt_center fadein_ani_ready" style="color:#7f7f7f">
+                        13종 카트리지로 피부층별 섬세한 에너지 전달,<br>
                         다양한 깊이에 응고존을 형성시킵니다.                        
                     </div>
-                    <div class="txt01 txt_center fadein_ani_ready">
-                        [EYEBROW 리프팅]
+                    <div class="txt01 txt_center fadein_ani_ready" style="margin-bottom: 0px;" >
+                        [<span class="small" >눈썹</span> 리프팅]
                     </div>
                     <div class="img_box01 txt_center fadein_ani_ready">
                         <img src="<?php echo base_url('/assets/images/cartridge_01.png')?>" alt="카트리지별 에너지전달 피부층" class="img">
                     </div>
 
-                    <div class="txt01 txt_center fadein_ani_ready">
-                        [허벅지 피부 탄력 개선]
+                    <div class="txt01 txt_center fadein_ani_ready" style="margin-bottom: 0px;" >
+                        [<span class="small">허벅지</span> 피부 탄력 개선]
                     </div>
                     <div class="img_box01 txt_center fadein_ani_ready">
                         <img src="<?php echo base_url('/assets/images/cartridge_02.png')?>" alt="카트리지별 에너지전달 피부층" class="img">
@@ -112,25 +90,26 @@
                     <div class="art_cartridge_box">
                         <h3 class="title03 title03_left txt_center fadein_ani_ready">
                             <div class="box">
-                                <span class="emph">두 가지 타입의</span> 초음파 카트리지
+                                <span
+                                 class="emph">두 가지 타입의</span> 초음파 카트리지
                             </div>
                         </h3>
                         <div class="txt02 txt_center fadein_ani_ready">
-                            도트 타입 카트리지 간격이 1~2mm까지 조절 가능하다면,<br>
-                            리니어 카트리지는 도트 사이의 간격이 0mm로 <br class="mo"> 빈틈이 적고 고르게 에너지를 전달합니다.
+                            도트(점타입) 카트리지 간격이 1~2mm까지 조절 가능하다면,<br>
+                            리니어(선타입) 카트리지는 도트 사이의 간격이 0mm로 <br class="mo"> 빈틈이 적고 고르게 에너지를 전달합니다.
                         </div>
                         <ul class="cartridge_type_list01 fadein_ani_ready">
                             <li class="cartridge_type_box">
                                 <div class="cartridge_type_img_box"><img src="<?php echo base_url('/assets/images/cartridge_type_01.jpg')?>" alt="점타입" class="img"></div>
-                                <div class="cartridge_type_txt_box">Dot (점) 타입</div>
+                                <div class="cartridge_type_txt_box">점 타입</div>
                             </li>
                             <li class="cartridge_type_box">
                                 <div class="cartridge_type_img_box"><img src="<?php echo base_url('/assets/images/cartridge_type_02.jpg')?>" alt="선타입" class="img"></div>
-                                <div class="cartridge_type_txt_box">Linear (선) 타입</div>
+                                <div class="cartridge_type_txt_box">선 타입</div>
                             </li>
                         </ul>
                         <div class="txt03 txt_center">
-                            새로워진 선타입 리니어펌 눈썹리프팅을 만나보세요.
+                            강한 선타입 초음파 에너지로 <span class="small">눈썹</span>리프팅 & <span class="small">허벅지</span> 탄력 개선
                         </div>
                     </div>
                     <div class="art_cartridge_box">
@@ -161,7 +140,7 @@
                 <h2 class="title02 fadein_ani_ready">시술원리</h2>
                 <div class="txt01 txt_center fadein_ani_ready">
                     집속형초음파 트랜스듀서에서 출력된 초음파 에너지의 <br class="mo">열작용을 이용하여 <br class="pc">
-                    조직을 응고시켜 <span class="emph">'눈썹 리프팅 및 허벅지 피부탄력 개선'</span> 을 합니다. <br>
+                    조직을 응고시켜 <span class="emph">'눈썹 리프팅 및 <?php if($this->cbconfig->get_device_view_type() === 'mobile') echo '<br>'; ?> 허벅지 피부탄력 개선'</span> 을 합니다. <br>
                     다양한 종류의 카트리지를 통해 피부 얕은 층부터 깊은 층까지<br>
                     응고존 형성이 가능합니다.
                 </div>
@@ -192,8 +171,8 @@
                         <div class="advantage_what"><img src="<?php echo base_url('/assets/images/advantage_what_title_01.png')?>" alt="what? 01" class="img"></div>
                         <div class="advantage_txt_box">
                             <div class="advantage_txt">
-                                간단한 마취로<br>
-                                <span class="emph">편안한 시술</span>
+                                편안한 시술로<br>
+                                <span class="emph">빠른 일상 복귀</span>
                             </div>
                         </div>
                         <div class="advantage_img_box">
@@ -204,16 +183,16 @@
                         <div class="advantage_what"><img src="<?php echo base_url('/assets/images/advantage_what_title_02.png')?>" alt="what? 02" class="img"></div>
                         <div class="advantage_txt_box">
                             <div class="advantage_txt">
-                                선형 리니어 카트리지 추가로<br>
-                                사용 부위에 빈틈이 적은<br>
-                                <span class="emph">빠른 속도로 적용</span>
+                                선타입 에너지가<br>
+                                넓은 면적에 적용해<br>
+                                <span class="emph">빠른 시술시간</span>
                             </div>
                         </div>
                         <div class="advantage_img_box">
                             <img src="<?php echo base_url('/assets/images/advantage_what_img_02.png')?>" alt="예시이미지" class="img">
                         </div>
                     </li>
-                    <li class="advantage_box txt_center fadein_ani_ready">
+                    <!-- <li class="advantage_box txt_center fadein_ani_ready">
                         <div class="advantage_what"><img src="<?php echo base_url('/assets/images/advantage_what_title_03.png')?>" alt="what? 03" class="img"></div>
                         <div class="advantage_txt_box">
                             <div class="advantage_txt">
@@ -225,18 +204,19 @@
                         <div class="advantage_img_box">
                             <img src="<?php echo base_url('/assets/images/advantage_what_img_03.png')?>" alt="예시이미지" class="img">
                         </div>
-                    </li>
+                    </li> -->
                     <li class="advantage_box txt_center fadein_ani_ready">
-                        <div class="advantage_what"><img src="<?php echo base_url('/assets/images/advantage_what_title_04.png')?>" alt="what? 04" class="img"></div>
+                        <div class="advantage_what"><img src="<?php echo base_url('/assets/images/advantage_what_title_03.png')?>" alt="what? 04" class="img"></div>
                         <div class="advantage_txt_box">
                             <div class="advantage_txt">
-                                10가지 종류의 카트리지로<br>
-                                피부 속 다양한 층까지<br>
-                                <span class="emph">에너지 전달</span>
+                                개인마다 다른<br>
+                                피부 두께와<br>
+                                원하는 부위에 맞는<br>
+                                <span class="emph">카트리지 선택</span>
                             </div>
                         </div>
                         <div class="advantage_img_box">
-                            <img src="<?php echo base_url('/assets/images/advantage_what_img_04.png')?>" alt="예시이미지" class="img">
+                            <img src="<?php echo base_url('/assets/images/advantage_what_img_03.png')?>" alt="예시이미지" class="img">
                         </div>
                     </li>
                 </ul>
