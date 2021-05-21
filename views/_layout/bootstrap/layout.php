@@ -17,7 +17,7 @@
 <?php if (element('canonical', $view)) { ?><link rel="canonical" href="<?php echo element('canonical', $view); ?>" /><?php } ?>
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/bootstrap.min.css');?>" />
 
-<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/common.css');?>?u=<?php echo date('Ymd')?>" />
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/common.css');?>?u=<?php echo date('Ymdhis')?>" />
 <?php echo $this->managelayout->display_css(); ?>
 <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.min.js');?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/jquery-ui.min.js');?>"></script>
@@ -72,6 +72,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       kakaoPixel('8328026460603858780').pageView();
 </script>
 
+<!-- Global site tag (gtag.js) - Google Ads: 382661377 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-382661377"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-382661377');
+</script>
+
 <!-- Facebook Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -87,7 +97,25 @@ fbq('track', 'PageView');
 </script>
 
 <!-- End Facebook Pixel Code -->
-
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '923027045163445'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" 
+src="https://www.facebook.com/tr?id=923027045163445&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
 
 </head>
 <body <?php echo isset($view) ? element('body_script', $view) : ''; ?>>

@@ -75,9 +75,10 @@ class Main extends CB_Controller
 		 */
 		
 		
-		if(empty($section))
-			$page_title = $this->cbconfig->item('site_meta_title_main');
-		elseif($section ==='sectLinearFirm')
+		$page_title = $this->cbconfig->item('site_meta_title_main');
+
+		
+		if($section ==='sectLinearFirm')
 			$page_title = '리니어펌';
 		elseif($section ==='sectCartridge')
 			$page_title = '카트리지';

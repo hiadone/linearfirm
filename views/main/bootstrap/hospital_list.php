@@ -30,7 +30,9 @@
                 <!-- 추가 : 리니어펌 검색하기 -->
                 <a href="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=%EB%A6%AC%EB%8B%88%EC%96%B4%ED%8E%8C" class="link" target="_blank" ><img src="<?php echo base_url('/assets/images/quick_search.png')?>" alt="리니어펌 검색하기" class="img" id="search_naver"></a>
                 <!--  -->
-                <a href="<?php echo base_url();?>"><img src="<?php echo base_url('/assets/images/quick_detail.png')?>" alt="리니어펌 병원찾기" class="img"></a>
+                <a href="<?php echo base_url();?>" class="link"><img src="<?php echo base_url('/assets/images/quick_detail.png')?>" alt="리니어펌 병원찾기" class="img"></a>
+
+                <a href="http://linearfirm-event.co.kr/" class="link" target="_blank"><img src="<?php echo base_url('/assets/images/quick_event_0518.png')?>?u=<?php echo date('Ymd')?>" alt="리니어펌 병원찾기" class="img"></a>
             </div>
             <div class="list_wrap">
             <?php 
