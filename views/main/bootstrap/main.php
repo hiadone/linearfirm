@@ -236,17 +236,19 @@
             <!-- 중단 비디오 -->
             <div class="video_container02" id="sectVideo">
                 <div class="video_box">
-                    <video class="video" controls poster="<?php echo base_url('/assets/images/video_thum_pc.jpg')?>">
+                    <!-- <video class="video" controls > -->
+                    <div class="video">
                         <?php 
                         if($this->cbconfig->get_device_view_type() === 'mobile')
-                            echo '<source src="'.base_url('/assets/video/video_mid_mo.mp4').'" type="video/mp4">' ;
+                            echo '<iframe width="100%" height="300" src="https://www.youtube.com/embed/VgVN9msGfsg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' ;
                         else 
-                            echo '<source src="'.base_url('/assets/video/video_mid_pc.mp4').'" type="video/mp4">' ;
+                            echo '<iframe width="100%" height="607" src="https://www.youtube.com/embed/VgVN9msGfsg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' ;
                          ?>
                         
-                        지원하지 않는 브라우저입니다.
-                    </video>
-                    <div class="video_tag txt_right">광고심의필 : 심의 번호 2019ET1450463</div>
+                        <!-- 지원하지 않는 브라우저입니다. -->
+                    <!-- </video> -->
+                    </div>
+                    <div class="video_tag txt_right">광고심의필 : 심의 번호 2021-I10-16-0908</div>
                 </div>
 
             </div>
