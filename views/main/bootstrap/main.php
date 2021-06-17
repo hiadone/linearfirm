@@ -34,7 +34,7 @@
                 <a href="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=%EB%A6%AC%EB%8B%88%EC%96%B4%ED%8E%8C" class="link" target="_blank" ><img src="<?php echo base_url('/assets/images/quick_search.png')?>?u=<?php echo date('Ymdhis')?>" alt="리니어펌 검색하기" class="img" id="search_naver"></a>
                 <!--  -->
                 <a href="<?php echo base_url('/main/hospital_list');?>" class="link"><img src="<?php echo base_url('/assets/images/quick_hospital.png')?>?u=<?php echo date('Ymdhis')?>" alt="리니어펌 병원찾기" class="img"></a>
-                <a href="http://linearfirm-event.co.kr/" class="link " target="_blank"><img src="<?php echo base_url('/assets/images/quick_event_0518.png')?>?u=<?php echo date('Ymdhis')?>" alt="리니어펌 병원찾기" class="img"></a>
+                <a href="http://linearfirm-event.co.kr/" class="link " target="_blank"><img src="<?php echo base_url('/assets/images/quick_event_0617.png')?>?u=<?php echo date('Ymdhis')?>" alt="리니어펌 병원찾기" class="img"></a>
             </div>
             
             <!-- 심의용x end -->
@@ -56,16 +56,19 @@
                 </div>
             </div>
             <!-- 리니어펌? -->
-
+            <a href="http://linearfirm-event.co.kr/" target="_blank">
             <section class="quick_event" id="quick_event_0518" >
-                <div class="inner_center">
+                
+                <!-- <div class="inner_center">
                     <div class="img_box">
                         <a href="http://linearfirm-event.co.kr/" target="_blank">
-                        <img src="<?php echo base_url('/assets/images/event_0518.png')?>?u=<?php echo date('Ymdhis')?>" alt="기기 이미지" class="img" style="max-width: 100%"></a>
+                        <img src="<?php echo base_url('/assets/images/event_0618.png')?>?u=<?php echo date('Ymdhis')?>" alt="기기 이미지" class="img" style="max-width: 100%"></a>
                         
                     </div>
-                </div>
+                </div> -->
+
             </section>
+            </a>
 
             <section class="sect_linearfirm" id="sectLinearFirm">
                 <div class="inner_center">

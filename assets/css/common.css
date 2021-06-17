@@ -1292,14 +1292,24 @@ br.mo {
 }
 @media screen and (min-width: 1200px) {
     .quick_event:before {
-        content: '';
+        /*content: '';
         display: block;
         position: absolute;
         z-index: -1;
         width: 100%;
-        height: 221px;
-        margin-top: 162px;
+        height: 218px;
+        margin-top: 164px;
         background-color: #f97863;
+        background: linear-gradient( to bottom, #50d5b4, #a3d2b7 );*/
+
+    }
+    .quick_event {
+        width: 100%;
+        height: 400px;
+        background-image: url('/assets/images/event_0618.png');
+        background-repeat: no-repeat ;
+        background-size: cover; 
+        background-position: center; 
     }
     /* footer */
     .footer .logo_img {
@@ -1321,6 +1331,14 @@ br.mo {
     }
 }
 @media screen and (max-width: 1199px) {
+    .quick_event {
+        width: 100%;
+        height: 400px;
+        background-image: url('/assets/images/event_mobile_0618.png');
+        background-repeat: no-repeat ;
+        background-size: contain; 
+        background-position: center; 
+    }
     .footer .footer_inner_center {
         width: 96%;
     }
