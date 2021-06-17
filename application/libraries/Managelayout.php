@@ -420,8 +420,8 @@ class Managelayout extends CI_Controller
                     </div>
                 </div>
                 <div class="sns_box">
-                    <a href="https://www.youtube.com/channel/UCqAKu5loQ8arXmiVQ-SFXQQ?view_as=subscriber" class="sns_link sns_youtube"><img src="'.base_url('/assets/images/logo_youtube.svg').'" alt="제이시스 유튜브" class="img"></a>
-                    <a href="https://www.instagram.com/p/CQNB38Sn_SB/?utm_source=ig_web_copy_link" class="sns_link sns_instagram"><img src="'.base_url('/assets/images/logo_instagram.svg').'" alt="제이시스 인스타그램" class="img"></a>
+                    <a href="https://www.youtube.com/channel/UCqAKu5loQ8arXmiVQ-SFXQQ?view_as=subscriber" class="sns_link sns_youtube" target="_blank"><img src="'.base_url('/assets/images/logo_youtube.svg').'" alt="제이시스 유튜브" class="img"></a>
+                    <a href="https://www.instagram.com/linearfirm/" class="sns_link sns_instagram" target="_blank"><img src="'.base_url('/assets/images/logo_instagram.svg').'" alt="제이시스 인스타그램" class="img"></a>
                 </div>
             </div>
         </footer>';
