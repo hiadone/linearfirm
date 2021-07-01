@@ -32,7 +32,7 @@
                 <!--  -->
                 <a href="<?php echo base_url();?>" class="link"><img src="<?php echo base_url('/assets/images/quick_detail.png')?>" alt="리니어펌 병원찾기" class="img"></a>
 
-                <a href="https://www.instagram.com/p/CQNB38Sn_SB/?utm_source=ig_web_copy_link" class="link " target="_blank"><img src="<?php echo base_url('/assets/images/quick_event_0617.png')?>?u=<?php echo date('Ymdhis')?>" alt="리니어펌 이벤트" class="img"></a>
+                <img src="<?php echo base_url('/assets/images/quick_event_0617.png')?>?u=<?php echo date('Ymd')?>" alt="리니어펌 이벤트" class="img">
             </div>
             <div class="list_wrap">
             <?php 
