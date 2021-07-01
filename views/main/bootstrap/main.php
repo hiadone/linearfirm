@@ -4,13 +4,13 @@
         <header class="header">
             <div class="inner_center clearfix">
                 <h1 class="h_logo_box">
-                    <a href="<?php echo base_url()?>"><img src="<?php echo base_url('/assets/images/h_logo.png')?>?u=<?php echo date('Ymdhis')?>" alt="리니어펌 로고" class="h_logo"></a>
+                    <a href="<?php echo base_url()?>"><img src="<?php echo base_url('/assets/images/h_logo.png')?>?u=<?php echo date('Ymd')?>" alt="리니어펌 로고" class="h_logo"></a>
                 </h1>
                 <nav class="gnb js-gnb-panel">
                     <ul class="gnb_list">
                         <li class="gnb_item js-gnb-item">
                             <a href="#sectLinearFirm" class="gnb_link js-gnb-link">리니어펌</a>
-                            <div class="tag_box"><img src="<?php echo base_url('/assets/images/tag_new.png')?>?u=<?php echo date('Ymdhis')?>" alt="new" class="img"></div>
+                            <div class="tag_box"><img src="<?php echo base_url('/assets/images/tag_new.png')?>?u=<?php echo date('Ymd')?>" alt="new" class="img"></div>
                         </li>
                         <li class="gnb_item js-gnb-item"><a href="#sectCartridge" class="gnb_link js-gnb-link">카트리지</a></li>
                         <li class="gnb_item js-gnb-item"><a href="#sectAdvantage" class="gnb_link js-gnb-link">특장점</a></li>
@@ -22,7 +22,7 @@
                         <?php } ?>
                     </ul>
                 </nav>
-                <button type="button" class="h_gnb_button js-gnb-button open"><img src="<?php echo base_url('/assets/images/h_icon_ham.svg')?>?u=<?php echo date('Ymdhis')?>" alt="네비게이션 버튼" class="icon"></button>
+                <button type="button" class="h_gnb_button js-gnb-button open"><img src="<?php echo base_url('/assets/images/h_icon_ham.svg')?>?u=<?php echo date('Ymd')?>" alt="네비게이션 버튼" class="icon"></button>
             </div>
         </header>
         <!-- main -->
@@ -31,10 +31,10 @@
             
             <div class="quick_link01">
                 <!-- 추가 : 리니어펌 검색하기 -->
-                <a href="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=%EB%A6%AC%EB%8B%88%EC%96%B4%ED%8E%8C" class="link" target="_blank" ><img src="<?php echo base_url('/assets/images/quick_search.png')?>?u=<?php echo date('Ymdhis')?>" alt="리니어펌 검색하기" class="img" id="search_naver"></a>
+                <a href="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=%EB%A6%AC%EB%8B%88%EC%96%B4%ED%8E%8C" class="link" target="_blank" ><img src="<?php echo base_url('/assets/images/quick_search.png')?>?u=<?php echo date('Ymd')?>" alt="리니어펌 검색하기" class="img" id="search_naver"></a>
                 <!--  -->
-                <a href="<?php echo base_url('/main/hospital_list');?>" class="link"><img src="<?php echo base_url('/assets/images/quick_hospital.png')?>?u=<?php echo date('Ymdhis')?>" alt="리니어펌 병원찾기" class="img"></a>
-                <a href="https://www.instagram.com/p/CQNB38Sn_SB/?utm_source=ig_web_copy_link" class="link " target="_blank"><img src="<?php echo base_url('/assets/images/quick_event_0617.png')?>?u=<?php echo date('Ymdhis')?>" alt="리니어펌 이벤트" class="img"></a>
+                <a href="<?php echo base_url('/main/hospital_list');?>" class="link"><img src="<?php echo base_url('/assets/images/quick_hospital.png')?>?u=<?php echo date('Ymd')?>" alt="리니어펌 병원찾기" class="img"></a>
+                <a href="https://www.instagram.com/p/CQNB38Sn_SB/?utm_source=ig_web_copy_link" class="link " target="_blank"><img src="<?php echo base_url('/assets/images/quick_event_0617.png')?>?u=<?php echo date('Ymd')?>" alt="리니어펌 이벤트" class="img"></a>
             </div>
             
             <!-- 심의용x end -->
@@ -44,12 +44,12 @@
                 <div class="inner_center" >
                     <?php if($this->cbconfig->get_device_view_type() === 'mobile'){ ?>
                     <video class="video" autoplay loop muted playsinline poster="<?php echo base_url('/assets/images/video_thum_top.png')?>">
-                        <source src="<?php echo base_url('/assets/video/video_top_pc4.mp4') ?>?u=<?php echo date('Ymdhis')?>" type="video/mp4">;
+                        <source src="<?php echo base_url('/assets/video/video_top_pc4.mp4') ?>?u=<?php echo date('Ymd')?>" type="video/mp4">;
                         지원하지 않는 브라우저입니다.
                     </video>
                     <?php } else { ?>
                     <video class="video" autoplay loop muted playsinline poster="<?php echo base_url('/assets/images/video_thum_top.png')?>">
-                        <source src="<?php echo base_url('/assets/video/video_top_pc4.mp4') ?>?u=<?php echo date('Ymdhis')?>" type="video/mp4">;
+                        <source src="<?php echo base_url('/assets/video/video_top_pc4.mp4') ?>?u=<?php echo date('Ymd')?>" type="video/mp4">;
                         지원하지 않는 브라우저입니다.
                     </video>
                     <?php } ?>
@@ -62,7 +62,7 @@
                 <!-- <div class="inner_center">
                     <div class="img_box">
                         <a href="http://linearfirm-event.co.kr/" target="_blank">
-                        <img src="<?php echo base_url('/assets/images/event_0618.png')?>?u=<?php echo date('Ymdhis')?>" alt="기기 이미지" class="img" style="max-width: 100%"></a>
+                        <img src="<?php echo base_url('/assets/images/event_0618.png')?>?u=<?php echo date('Ymd')?>" alt="기기 이미지" class="img" style="max-width: 100%"></a>
                         
                     </div>
                 </div> -->
@@ -73,8 +73,8 @@
             <section class="sect_linearfirm" id="sectLinearFirm">
                 <div class="inner_center">
                     <div class="img_box">
-                        <img src="<?php echo base_url('/assets/images/main.png')?>?u=<?php echo date('Ymdhis')?>" alt="기기 이미지" class="img img_pc">
-                        <img src="<?php echo base_url('/assets/images/main.png')?>?u=<?php echo date('Ymdhis')?>" alt="기기 이미지" class="img img_mo">
+                        <img src="<?php echo base_url('/assets/images/main.png')?>?u=<?php echo date('Ymd')?>" alt="기기 이미지" class="img img_pc">
+                        <img src="<?php echo base_url('/assets/images/main.png')?>?u=<?php echo date('Ymd')?>" alt="기기 이미지" class="img img_mo">
                     </div>
                 </div>
             </section>
@@ -91,14 +91,14 @@
                         [<span class="small" >눈썹</span> 리프팅]
                     </div>
                     <div class="img_box01 txt_center fadein_ani_ready">
-                        <img src="<?php echo base_url('/assets/images/cartridge_01.png')?>?u=<?php echo date('Ymdhis')?>" alt="카트리지별 에너지전달 피부층" class="img">
+                        <img src="<?php echo base_url('/assets/images/cartridge_01.png')?>?u=<?php echo date('Ymd')?>" alt="카트리지별 에너지전달 피부층" class="img">
                     </div>
 
                     <div class="txt01 txt_center fadein_ani_ready" style="margin-bottom: 0px;" >
                         [<span class="small">허벅지</span> 피부 탄력 개선]
                     </div>
                     <div class="img_box01 txt_center fadein_ani_ready">
-                        <img src="<?php echo base_url('/assets/images/cartridge_02.png')?>?u=<?php echo date('Ymdhis')?>" alt="카트리지별 에너지전달 피부층" class="img">
+                        <img src="<?php echo base_url('/assets/images/cartridge_02.png')?>?u=<?php echo date('Ymd')?>" alt="카트리지별 에너지전달 피부층" class="img">
                     </div>
                 </div>
                 <div class="art_cartridge">
@@ -115,11 +115,11 @@
                         </div>
                         <ul class="cartridge_type_list01 fadein_ani_ready">
                             <li class="cartridge_type_box">
-                                <div class="cartridge_type_img_box"><img src="<?php echo base_url('/assets/images/cartridge_type_01.jpg')?>?u=<?php echo date('Ymdhis')?>" alt="점타입" class="img"></div>
+                                <div class="cartridge_type_img_box"><img src="<?php echo base_url('/assets/images/cartridge_type_01.jpg')?>?u=<?php echo date('Ymd')?>" alt="점타입" class="img"></div>
                                 <div class="cartridge_type_txt_box">점 타입</div>
                             </li>
                             <li class="cartridge_type_box">
-                                <div class="cartridge_type_img_box"><img src="<?php echo base_url('/assets/images/cartridge_type_02.jpg')?>?u=<?php echo date('Ymdhis')?>" alt="선타입" class="img"></div>
+                                <div class="cartridge_type_img_box"><img src="<?php echo base_url('/assets/images/cartridge_type_02.jpg')?>?u=<?php echo date('Ymd')?>" alt="선타입" class="img"></div>
                                 <div class="cartridge_type_txt_box">선 타입</div>
                             </li>
                         </ul>
@@ -143,7 +143,7 @@
                                 <div class="cartridge_type_txt_box">width : 12.5mm</div>
                             </li> -->
                             <li class="cartridge_type_box">
-                                <img src="<?php echo base_url('/assets/images/cartridge_type_04.jpg')?>?u=<?php echo date('Ymdhis')?>" alt="8.6mm" class="img">
+                                <img src="<?php echo base_url('/assets/images/cartridge_type_04.jpg')?>?u=<?php echo date('Ymd')?>" alt="8.6mm" class="img">
                                 <div class="cartridge_type_txt_box">width : 8.7cm</div>
                             </li>
                         </ul>
@@ -161,20 +161,20 @@
                 </div>
                 <ul class="treatment_step_list clearfix">
                     <li class="treatment_step_box fadein_ani_ready">
-                        <img src="<?php echo base_url('/assets/images/treatment_step_01.png')?>?u=<?php echo date('Ymdhis')?>" alt="step1 집속형 초음파 에너지" class="img img_pc">
-                        <img src="<?php echo base_url('/assets/images/treatment_step_mo_01.png')?>?u=<?php echo date('Ymdhis')?>" alt="step1 집속형 초음파 에너지" class="img img_mo">
+                        <img src="<?php echo base_url('/assets/images/treatment_step_01.png')?>?u=<?php echo date('Ymd')?>" alt="step1 집속형 초음파 에너지" class="img img_pc">
+                        <img src="<?php echo base_url('/assets/images/treatment_step_mo_01.png')?>?u=<?php echo date('Ymd')?>" alt="step1 집속형 초음파 에너지" class="img img_mo">
                     </li>
                     <li class="treatment_step_box fadein_ani_ready">
-                        <img src="<?php echo base_url('/assets/images/treatment_step_02.png')?>?u=<?php echo date('Ymdhis')?>" alt="step2 열작용으로 응고존 형성" class="img img_pc">
-                        <img src="<?php echo base_url('/assets/images/treatment_step_mo_02.png')?>?u=<?php echo date('Ymdhis')?>" alt="step2 열작용으로 응고존 형성" class="img img_mo">
+                        <img src="<?php echo base_url('/assets/images/treatment_step_02.png')?>?u=<?php echo date('Ymd')?>" alt="step2 열작용으로 응고존 형성" class="img img_pc">
+                        <img src="<?php echo base_url('/assets/images/treatment_step_mo_02.png')?>?u=<?php echo date('Ymd')?>" alt="step2 열작용으로 응고존 형성" class="img img_mo">
                     </li>
                     <li class="treatment_step_box fadein_ani_ready">
-                        <img src="<?php echo base_url('/assets/images/treatment_step_03.png')?>?u=<?php echo date('Ymdhis')?>" alt="step3 조직 응고, 피부 수축 효과" class="img img_pc">
-                        <img src="<?php echo base_url('/assets/images/treatment_step_mo_03.png')?>?u=<?php echo date('Ymdhis')?>" alt="step3 조직 응고, 피부 수축 효과" class="img img_mo">
+                        <img src="<?php echo base_url('/assets/images/treatment_step_03.png')?>?u=<?php echo date('Ymd')?>" alt="step3 조직 응고, 피부 수축 효과" class="img img_pc">
+                        <img src="<?php echo base_url('/assets/images/treatment_step_mo_03.png')?>?u=<?php echo date('Ymd')?>" alt="step3 조직 응고, 피부 수축 효과" class="img img_mo">
                     </li>
                     <li class="treatment_step_box fadein_ani_ready">
-                        <img src="<?php echo base_url('/assets/images/treatment_step_04.png')?>?u=<?php echo date('Ymdhis')?>" alt="eyebrow lifting" class="img img_pc">
-                        <img src="<?php echo base_url('/assets/images/treatment_step_mo_04.png')?>?u=<?php echo date('Ymdhis')?>" alt="eyebrow lifting" class="img img_mo">
+                        <img src="<?php echo base_url('/assets/images/treatment_step_04.png')?>?u=<?php echo date('Ymd')?>" alt="eyebrow lifting" class="img img_pc">
+                        <img src="<?php echo base_url('/assets/images/treatment_step_mo_04.png')?>?u=<?php echo date('Ymd')?>" alt="eyebrow lifting" class="img img_mo">
                     </li>
                 </ul>
             </section>
@@ -183,7 +183,7 @@
                 <h2 class="title02 fadein_ani_ready">특장점</h2>
                 <ul class="advantage_list clearfix">
                     <li class="advantage_box txt_center fadein_ani_ready">
-                        <div class="advantage_what"><img src="<?php echo base_url('/assets/images/advantage_what_title_01.png')?>?u=<?php echo date('Ymdhis')?>" alt="what? 01" class="img"></div>
+                        <div class="advantage_what"><img src="<?php echo base_url('/assets/images/advantage_what_title_01.png')?>?u=<?php echo date('Ymd')?>" alt="what? 01" class="img"></div>
                         <div class="advantage_txt_box">
                             <div class="advantage_txt">
                                 편안한 시술로<br>
@@ -191,11 +191,11 @@
                             </div>
                         </div>
                         <div class="advantage_img_box">
-                            <img src="<?php echo base_url('/assets/images/advantage_what_img_01.png')?>?u=<?php echo date('Ymdhis')?>" alt="예시이미지" class="img">
+                            <img src="<?php echo base_url('/assets/images/advantage_what_img_01.png')?>?u=<?php echo date('Ymd')?>" alt="예시이미지" class="img">
                         </div>
                     </li>
                     <li class="advantage_box txt_center fadein_ani_ready">
-                        <div class="advantage_what"><img src="<?php echo base_url('/assets/images/advantage_what_title_02.png')?>?u=<?php echo date('Ymdhis')?>" alt="what? 02" class="img"></div>
+                        <div class="advantage_what"><img src="<?php echo base_url('/assets/images/advantage_what_title_02.png')?>?u=<?php echo date('Ymd')?>" alt="what? 02" class="img"></div>
                         <div class="advantage_txt_box">
                             <div class="advantage_txt">
                                 선타입 에너지가<br>
@@ -204,7 +204,7 @@
                             </div>
                         </div>
                         <div class="advantage_img_box">
-                            <img src="<?php echo base_url('/assets/images/advantage_what_img_02.png')?>?u=<?php echo date('Ymdhis')?>" alt="예시이미지" class="img">
+                            <img src="<?php echo base_url('/assets/images/advantage_what_img_02.png')?>?u=<?php echo date('Ymd')?>" alt="예시이미지" class="img">
                         </div>
                     </li>
                     <!-- <li class="advantage_box txt_center fadein_ani_ready">
@@ -221,7 +221,7 @@
                         </div>
                     </li> -->
                     <li class="advantage_box txt_center fadein_ani_ready">
-                        <div class="advantage_what"><img src="<?php echo base_url('/assets/images/advantage_what_title_03.png')?>?u=<?php echo date('Ymdhis')?>" alt="what? 04" class="img"></div>
+                        <div class="advantage_what"><img src="<?php echo base_url('/assets/images/advantage_what_title_03.png')?>?u=<?php echo date('Ymd')?>" alt="what? 04" class="img"></div>
                         <div class="advantage_txt_box">
                             <div class="advantage_txt">
                                 개인마다 다른<br>
@@ -231,7 +231,7 @@
                             </div>
                         </div>
                         <div class="advantage_img_box">
-                            <img src="<?php echo base_url('/assets/images/advantage_what_img_03.png')?>?u=<?php echo date('Ymdhis')?>" alt="예시이미지" class="img">
+                            <img src="<?php echo base_url('/assets/images/advantage_what_img_03.png')?>?u=<?php echo date('Ymd')?>" alt="예시이미지" class="img">
                         </div>
                     </li>
                 </ul>
