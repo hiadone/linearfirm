@@ -1334,7 +1334,7 @@ br.mo {
     .quick_event {
         width: 100%;
         height: 400px;
-        background-image: url('/assets/images/event_0707.jpg');
+        background-image: url('/assets/images/mobile_event_0707.png');
         background-repeat: no-repeat ;
         background-size: contain; 
         background-position: center; 
@@ -1361,8 +1361,8 @@ br.mo {
 
     .quick_event {
         width: 100%;
-        height: 300px;
-        background-image: url('/assets/images/event_0707.jpg');
+        height: 250px;
+        background-image: url('/assets/images/mobile_event_0707.png');
         background-repeat: no-repeat ;
         background-size: contain; 
         background-position: center; 
@@ -1401,8 +1401,8 @@ br.mo {
 @media screen and (max-width: 480px) {
     .quick_event {
         width: 100%;
-        height: 200px;
-        background-image: url('/assets/images/event_0707.jpg');
+        height: 150px;
+        background-image: url('/assets/images/mobile_event_0707.png');
         background-repeat: no-repeat ;
         background-size: contain; 
         background-position: center; 
