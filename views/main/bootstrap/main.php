@@ -243,15 +243,15 @@
                     <div class="video">
                         <?php 
                         if($this->cbconfig->get_device_view_type() === 'mobile')
-                            echo '<iframe width="100%" height="300" src="https://www.youtube.com/embed/VgVN9msGfsg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' ;
+                            echo '<iframe width="100%" height="300" src="https://youtu.be/FaVtqGctjEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' ;
                         else 
-                            echo '<iframe width="100%" height="607" src="https://www.youtube.com/embed/VgVN9msGfsg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' ;
+                            echo '<iframe width="100%" height="607" src="https://youtu.be/FaVtqGctjEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' ;
                          ?>
                         
                         <!-- 지원하지 않는 브라우저입니다. -->
                     <!-- </video> -->
                     </div>
-                    <div class="video_tag txt_right">광고심의필 : 심의 번호 2021-I10-16-0908</div>
+                    <div class="video_tag txt_right">광고심의필 : 심의번호 12021-I10-08-0642</div>
                 </div>
 
             </div>
