@@ -243,9 +243,9 @@
                     <div class="video">
                         <?php 
                         if($this->cbconfig->get_device_view_type() === 'mobile')
-                            echo '<iframe width="100%" height="300" src="https://youtu.be/FaVtqGctjEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' ;
+                            echo '<iframe width="100%" height="300" src="https://www.youtube.com/embed/FaVtqGctjEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' ;
                         else 
-                            echo '<iframe width="100%" height="607" src="https://youtu.be/FaVtqGctjEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' ;
+                            echo '<iframe width="100%" height="607" src="https://www.youtube.com/embed/FaVtqGctjEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' ;
                          ?>
                         
                         <!-- 지원하지 않는 브라우저입니다. -->
